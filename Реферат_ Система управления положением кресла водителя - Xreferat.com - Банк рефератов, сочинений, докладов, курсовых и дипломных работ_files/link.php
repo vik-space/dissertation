@@ -1,0 +1,1 @@
+document.write('<a class="link" href="http://xreferat.com/js/order.php" target="_blank">Заказывайте: <span class="red">рефераты - 150 р.</span> курсовые - 700 р. <span class="red">дипломы - 2500 р.</span></a>');

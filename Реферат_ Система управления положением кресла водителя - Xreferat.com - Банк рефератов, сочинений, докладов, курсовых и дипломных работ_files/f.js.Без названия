@@ -1,0 +1,9 @@
+//hidepost fullstory
+window.onload = function(){
+document.forms[0].onsubmit = function(){
+document.getElementById('sb').style.display='none';
+document.getElementById('fullstory').style.display='none';
+document.getElementById('related').style.display='none';
+        return false;
+    };
+};

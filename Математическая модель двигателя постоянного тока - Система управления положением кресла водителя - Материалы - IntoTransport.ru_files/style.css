@@ -1,0 +1,229 @@
+/*
+Theme Name: Modern Girl
+Theme URI: http://www.babybeddingzone.com/
+Description: A variation of <a href="http://blog.babybeddingzone.com/">Baby Bedding Zone's custom blog theme</a>, which was in turn adapted from the main design of <a href="http://www.babybeddingzone.com/">Baby Bedding Zone</a>. Desgned for WP 2.6.x, Widget and Gravatar ready. Released under <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License (GPL) Version 3</a>.
+Version: 1.1
+Author: Laura Abro
+Tags: fixed width, brown, pink, two columns, valid CSS, valid XHTML, left sidebar, widget ready, simple, no images
+*/
+
+div,td,p {font-family: arial, helvetica, verdana, sans-serif; color: #333333; font-size: 14px; line-height: 140%;}
+
+input,select,textarea,tt {font-family: arial, helvetica, verdana, sans-serif;color: #333333; font-size: 11px;}
+
+body {background-color: #eaf7f5; margin: 0; padding: 0px; color: #333333;}
+
+form {margin: 0px;}
+
+table,img {border: 0px;}
+
+a img {border:0;}
+
+a:link {color: #ca4444;text-decoration: none;}
+a:visited {color: #ca4444;text-decoration: none;}
+a:hover {color: #000080;text-decoration: underline;}
+
+li,ul {
+margin:0;
+padding:0;
+list-style:none;
+list-style-type: none;
+position:relative;
+list-style-image:none;
+margin-bottom:5px;
+}
+
+p {margin:0 0 10px 0;padding:0;}
+
+h1 {font-size: 17px; margin-top: 0px; margin-bottom: 8px; color:#330000;}
+h2 {font-size: 14px; margin-top: 0px; margin-bottom: 8px;}
+h3 {font-size: 12px; margin-top: 0px; margin-bottom: 8px;}
+
+hr {color: #dddddd;height: 1px;}
+
+#container {height: 100%; width: 980px; margin: 0 auto;}
+
+#wrapper {border: 0px solid #477dbe; background-color: #ffffff; height: 100%; min-height: 100%; }
+
+#wrapper:after { content: ""; display: block; height: 0; clear: both; }
+
+.main {margin-left: 10px; padding: 10px 50px 0 0; float: right; width: 680px;}
+
+.main h1 { padding-top:10px;}
+
+
+/*  SIDEBAR  */
+
+.VertMenuLeftColumn {vertical-align: top; padding: 10px 0 10px 10px; float: left; width: 200px;}
+
+#VertMenuLeftColumn ul,#VertMenuLeftColumn li{
+margin:0;
+padding:2px 5px;
+list-style:none;
+display:block;
+position:relative;
+list-style-image:none;
+}
+
+.VertMenuBox {background-color: #ffffff; padding: 5px 0 0 0; font-size:12px;}
+
+
+.VertMenuBox a {
+color:#000080;
+text-decoration:underline;
+}
+
+.VertMenuBox a:hover {
+color:#ca4444;
+text-decoration: underline;
+}
+
+.VertMenuTitle {background: #330000; color: #ffffff; font-weight: bold; padding: 3px 0 3px 7px; margin-top: 5px;}
+
+/*  FOOTER  */
+
+.BottomRow {text-align: center; vertical-align: bottom; padding-top: 10px; clear: both;}
+
+.BottomBox {color: #FFFFFF; height:45px; vertical-align: middle; padding: 5px 0 5px 0; background-color: #715252;}
+
+.bottom {color: #FFFFFF; font-size: 11px;}
+
+.bottom a {color: #FFFFFF; text-decoration: none;}
+
+.bottom a:hover {color:#ffffff; text-decoration:underline;}
+
+
+
+
+#nav {
+width: 960px;
+ height: 150px;
+ margin: 0 auto; padding: 0;
+ position: relative;
+}
+
+#nav li {
+ 	margin: 0; padding: 0; list-style: none; display: block; position: absolute;
+}
+
+#nav a {
+	display: block;
+}
+
+
+#comments p {margin:0;padding:0;margin-left:10px;}
+
+
+
+
+#head {
+width:960px;
+height:105px;
+background-color:#490b0b;
+margin:0 auto;
+padding:0;
+border-bottom:1px solid #9b4444;
+}
+
+#head p {
+color:#ffffff;
+text-align:center;
+font-size:14px;
+}
+
+#head h1 {
+padding-top:30px;
+text-align:center;
+font-size:30px;
+}
+
+#head h1 a {
+color:#d66c6c;
+}
+
+#navblog {
+width:960px;
+height:43px;
+background-color:#330000;
+margin:-5px auto 2px auto;
+padding:0;
+}
+
+#navblog li {
+margin:0;
+padding:0;
+list-style-type: none;
+text-align:center;
+font-size:12pt;
+font-weight:bold;
+height:43px;
+line-height:43px;
+display:block;
+float:left;
+}
+
+#navblog li a {
+color:#ffffff;
+text-decoration:none;
+padding:0 15px 0 15px;
+}
+
+#navblog li  a:hover {
+background-color:#d66c6c;
+color:#330000;
+display:block;
+}
+
+h2.postTitle {
+font-size:18px;
+padding-top:10px;
+}
+
+h2.postTitle a {
+text-decoration:underline;
+color: #330000;
+}
+
+h2.postTitle a:hover {
+text-decoration:none;
+color: #ca4444;
+}
+
+.postMeta {
+font-size:12px;
+padding:5px 0 5px 10px;
+background-color: #f2f2f2;
+}
+
+.postTags {
+font-size:12px;
+padding:5px 0 5px 10px;
+background-color: #f2f2f2;
+}
+
+hr.postDivider {
+height:1px;
+color:#e6e6e6;
+background-color:#e6e6e6;
+border:0;
+width:650px;
+margin: 0 auto 20px 0;
+text-align:left;
+}
+
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.alignleft {
+   float: left;
+}
+
+.alignright {
+   float: right;
+}
+
+img.avatar {float:left; margin-right:10px;}

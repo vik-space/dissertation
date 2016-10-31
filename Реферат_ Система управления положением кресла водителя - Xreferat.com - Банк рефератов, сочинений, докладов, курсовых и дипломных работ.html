@@ -1,0 +1,2403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0083)http://xreferat.com/96/1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+	<title>Реферат: Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ</title>
+	
+	<meta name="description" content="Разработка алгоритма и системы управления положением кресла водителя. Синтез микроконтроллерной системы управления, предназначенной для увеличения комфортабельности поездки в автомобиле. Оценка возможных факторов, влияющих на процесс управления объектом.">
+	<meta name="keywords" content="Система, управления, положением, кресла, водителя">
+	<link rel="stylesheet" href="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/style.css" type="text/css" media="screen, projection">
+	<script async="" src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/analytics.js.Без названия"></script><script src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/jquery.min.js.Без названия" type="text/javascript"></script>
+	<script src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/js.js.Без названия" type="text/javascript"></script>
+	<script src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/f.js.Без названия" type="text/javascript"></script>
+	<script type="text/javascript">xreferatk();</script><script type="text/javascript">(function(){var f=false,b=document,c=b.documentElement,e=window;function g(){var a="";a+="rt="+(new Date).getTime()%1E7*100+Math.round(Math.random()*99);a+=b.referrer?"&r="+escape(b.referrer):"";return a}function h(){var a=b.getElementsByTagName("head")[0];if(a)return a;for(a=c.firstChild;a&&a.nodeName.toLowerCase()=="#text";)a=a.nextSibling;if(a&&a.nodeName.toLowerCase()!="#text")return a;a=b.createElement("head");c.appendChild(a);return a}function i(){var a=b.createElement("script");a.setAttribute("type","text/javascript");a.setAttribute("src","http"+("https:"==e.location.protocol?"s":"")+"://s.luxadv.com/t/lb195981_3.js?"+g());typeof a!="undefined"&&h().appendChild(a)}function d(){if(!f){f=true;i()}};if(b.addEventListener)b.addEventListener("DOMContentLoaded",d,false);else if(b.attachEvent){c.doScroll&&e==e.top&&function(){try{c.doScroll("left")}catch(a){setTimeout(arguments.callee,0);return}d()}();b.attachEvent("onreadystatechange",function(){b.readyState==="complete"&&d()})}else e.onload=d})();</script>
+<script type="text/javascript" src="http://s.luxadv.com/t/lb195981_3.js?rt=83190830070&amp;r=http%3A//nigma.ru/%3Fs%3D%25D1%2580%25D0%25B0%25D0%25B7%25D1%2580%25D0%25B0%25D0%25B1%25D0%25BE%25D1%2582%25D0%25BA%25D0%25B0+%25D0%25BC%25D0%25B0%25D1%2582%25D0%25B5%25D0%25BC%25D0%25B0%25D1%2582%25D0%25B8%25D1%2587%25D0%25B5%25D1%2581%25D0%25BA%25D0%25BE%25D0%25B9+%25D0%25BC%25D0%25BE%25D0%25B4%25D0%25B5%25D0%25BB%25D0%25B8+%25D0%25B4%25D0%25B2%25D0%25B8%25D0%25B3%25D0%25B0%25D1%2582%25D0%25B5%25D0%25BB%25D1%258F+%25D0%25BF%25D0%25BE%25D1%2581%25D1%2582%25D0%25BE%25D1%258F%25D0%25BD%25D0%25BD%25D0%25BE%25D0%25B3%25D0%25BE+%25D1%2582%25D0%25BE%25D0%25BA%25D0%25B0%26t%3Dweb%26rg%3Dt%253D%25D0%259A%25D1%2580%25D0%25B0%25D1%2581%25D0%25BD%25D0%25BE%25D1%258F%25D1%2580%25D1%2581%25D0%25BA_c%253D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F_%26rg_view%3D%25D0%259A%25D1%2580%25D0%25B0%25D1%2581%25D0%25BD%25D0%25BE%25D1%258F%25D1%2580%25D1%2581%25D0%25BA%25D0%25B5%26yn%3D1%26gl%3D1%26rm%3D1%26ms%3D1%26yh%3D1%26av%3D1%26nm%3D1%26lang%3Dall%26srt%3D0%26sf%3D1"></script><style type="text/css" id="ya_share_style">.b-share-popup-wrap{z-index:1073741823;position:absolute;width:500px}.b-share-popup{position:absolute;z-index:1073741823;border:1px solid #888;background:#FFF;color:#000}.b-share-popup-wrap .b-share-popup_down{top:0}.b-share-popup-wrap .b-share-popup_up{bottom:0}.b-share-popup-wrap_state_hidden{position:absolute!important;top:-9999px!important;right:auto!important;bottom:auto!important;left:-9999px!important;visibility:hidden!important}.b-share-popup,x:nth-child(1){border:0;padding:1px!important}@media all and (resolution = 0dpi){.b-share-popup,x:nth-child(1),x:-o-prefocus{padding:0!important;border:1px solid #888}}.b-share-popup__i{display:-moz-inline-box;display:inline-block;padding:5px 0!important;overflow:hidden;vertical-align:top;white-space:nowrap;visibility:visible;background:#FFF;-webkit-box-shadow:0 2px 9px rgba(0,0,0,0.6);-moz-box-shadow:0 2px 9px rgba(0,0,0,0.6);box-shadow:0 2px 9px rgba(0,0,0,0.6)}.b-share-popup__item{font:1em/1.25em Arial,sans-serif;display:block;padding:5px 15px!important;white-space:nowrap;background:#FFF}.b-share-popup__item,a.b-share-popup__item:link,a.b-share-popup__item:visited{text-decoration:none!important;border:0!important}a.b-share-popup__item{cursor:pointer}a.b-share-popup__item .b-share-popup__item__text{display:inline;text-decoration:underline;color:#1a3dc1}a.b-share-popup__item:hover{word-spacing:0}a.b-share-popup__item:hover .b-share-popup__item__text{color:#F00;cursor:pointer}.b-share-popup__icon{display:-moz-inline-box;display:inline-block;margin:-3px 0 0 0;padding:0 5px 0 0!important;vertical-align:middle}.b-share-popup__icon_input{width:21px;height:16px;margin-top:-6px;padding:0!important}.b-share-popup__icon__input{margin-right:0;margin-left:2px;vertical-align:top}.b-share-popup__spacer{display:block;padding-top:10px!important}.b-share-popup__header{font:86%/1em Verdana,sans-serif;display:block;padding:10px 15px 5px 15px!important;color:#999}.b-share-popup__header_first{padding-top:5px!important}.b-share-popup__input{font:86%/1em Verdana,sans-serif;display:block;padding:5px 15px!important;color:#999;text-align:left}.b-share-popup__input__input{font:1em/1em Verdana,sans-serif;display:block;width:10px;margin:5px 0 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;resize:none;text-align:left;direction:ltr}.b-share-popup_down .b-share-popup_with-link .b-share-popup__input_link{position:absolute;top:5px;right:0;left:0}.b-share-popup_up .b-share-popup_with-link .b-share-popup__input_link{position:absolute;right:0;bottom:5px;left:0}.b-share-popup_down .b-share-popup_with-link{padding-top:55px!important}.b-share-popup_up .b-share-popup_with-link{padding-bottom:55px!important}.b-share-popup_down .b-share-popup_expandable .b-share-popup__main{padding-bottom:25px!important}.b-share-popup_up .b-share-popup_expandable .b-share-popup__main{padding-top:25px!important}.b-share-popup_down .b-share-popup_yandexed{padding-bottom:10px!important}.b-share-popup_up .b-share-popup_yandexed{padding-top:10px!important}.b-share-popup__yandex{position:absolute;right:4px;bottom:2px;font:78.125%/1em Verdana,sans-serif;padding:3px!important;background:transparent}a.b-share-popup__yandex:link,a.b-share-popup__yandex:visited{color:#c6c5c5;text-decoration:none}a.b-share-popup__yandex:link:hover,a.b-share-popup__yandex:visited:hover{color:#F00;text-decoration:underline}.b-share-popup_up .b-share-popup__yandex{top:2px;bottom:auto}.b-share-popup_expandable .b-share-popup__yandex{right:auto;left:4px}.b-share-popup_to-right .b-share-popup_expandable .b-share-popup__yandex{right:4px;left:auto}.b-share-popup__expander .b-share-popup__item{position:absolute;bottom:5px;font:86%/1em Verdana,sans-serif;margin:10px 0 0;padding:5px 10px!important;cursor:pointer;color:#999;background:transparent}.b-share-popup_to-right,.b-share-popup_to-right .b-share-popup__expander{direction:rtl}.b-share-popup_to-right .b-share-popup__expander .b-share-popup__icon{padding:0 0 0 5px!important}.b-share-popup_up .b-share-popup__expander .b-share-popup__item{top:-5px;bottom:auto}.b-share-popup__expander .b-share-popup__item:hover .b-share-popup__item__text{text-decoration:underline}.b-share-popup__expander .b-ico_action_rarr,.b-share-popup_to-right .b-share-popup__expander .b-ico_action_larr,.b-share-popup_full .b-share-popup__expander .b-ico_action_larr,.b-share-popup_to-right .b-share-popup_full .b-share-popup__expander .b-ico_action_rarr,.b-share-popup__expander .b-share-popup__item__text_collapse,.b-share-popup_full .b-share-popup__item__text_expand{display:none}.b-share-popup_to-right .b-share-popup__expander .b-ico_action_rarr,.b-share-popup_full .b-share-popup__item__text_collapse,.b-share-popup_full .b-share-popup__expander .b-ico_action_rarr,.b-share-popup_to-right .b-share-popup_full .b-share-popup__expander .b-ico_action_larr{display:inline}.b-ico_action_rarr,.b-ico_action_larr{width:8px;height:7px;border:0}.b-share-popup__main,.b-share-popup__extra{direction:ltr;vertical-align:bottom;text-align:left}.b-share-popup_down .b-share-popup__main,.b-share-popup_down .b-share-popup__extra{vertical-align:top}.b-share-popup__main{display:-moz-inline-stack;display:inline-block}.b-share-popup__extra{display:none;margin:0 -10px 0 0}.b-share-popup_full .b-share-popup__extra{display:-moz-inline-stack;display:inline-block}.b-share-popup_to-right .b-share-popup__extra{margin:0 0 0 -10px}.b-share-popup__tail{position:absolute;width:21px;height:10px;margin:0 0 0 -11px}.b-share-popup_down .b-share-popup__tail{top:-10px;background:url(//xreferat.com/share/b-share-popup_down__tail.gif) 0 0 no-repeat}.b-share-popup_up .b-share-popup__tail{bottom:-10px;background:url(//xreferat.com/share/b-share-popup_up__tail.gif) 0 0 no-repeat}.b-share-popup_down .b-share-popup__tail,x:nth-child(1){top:-9px;background-image:url(//xreferat.com/share/b-share-popup_down__tail.png)}.b-share-popup_up .b-share-popup__tail,x:nth-child(1){bottom:-9px;background-image:url(//xreferat.com/share/b-share-popup_up__tail.png)}@media all and (resolution = 0dpi){.b-share-popup_down .b-share-popup__tail,x:nth-child(1),x:-o-prefocus{top:-10px;background-image:url(//xreferat.com/share/b-share-popup_down__tail.gif)}.b-share-popup_up .b-share-popup__tail,x:nth-child(1),x:-o-prefocus{bottom:-10px;background-image:url(//xreferat.com/share/b-share-popup_up__tail.gif)}}.b-share-popup .b-share-popup_show_form_mail,.b-share-popup .b-share-popup_show_form_html{padding:0!important}.b-share-popup .b-share-popup_show_form_mail .b-share-popup__main,.b-share-popup .b-share-popup_show_form_html .b-share-popup__main,.b-share-popup .b-share-popup_show_form .b-share-popup__main,.b-share-popup .b-share-popup_show_form_mail .b-share-popup__extra,.b-share-popup .b-share-popup_show_form_html .b-share-popup__extra,.b-share-popup .b-share-popup_show_form .b-share-popup__extra{height:15px;padding:0!important;overflow:hidden;visibility:hidden}.b-share-popup_show_form_mail .b-share-popup__expander,.b-share-popup_show_form_html .b-share-popup__expander,.b-share-popup_show_form .b-share-popup__expander,.b-share-popup_show_form_mail .b-share-popup__input_link,.b-share-popup_show_form_html .b-share-popup__input_link,.b-share-popup_show_form .b-share-popup__input_link{display:none}.b-share-popup__form{position:relative;display:none;overflow:hidden;padding:5px 0 0!important;margin:0 0 -15px;white-space:normal}.b-share-popup_show_form_mail .b-share-popup__form_mail,.b-share-popup_show_form_html .b-share-popup__form_html,.b-share-popup_show_form .b-share-popup__form{display:block}.b-share-popup__form__link{font:86%/1.4545em Verdana,sans-serif;float:left;display:inline;padding:5px!important;margin:0 0 5px 10px;text-decoration:underline;cursor:pointer;color:#1a3dc1}.b-share-popup__form__button{font:86%/1.4545em Verdana,sans-serif;float:left;display:inline;margin:5px 0 0 15px}.b-share-popup__form__close{font:86%/1.4545em Verdana,sans-serif;float:right;display:inline;padding:5px!important;margin:0 10px 5px 0;cursor:pointer;color:#999}a.b-share-popup__form__link:hover,a.b-share-popup__form__close:hover{text-decoration:underline;color:#F00}.b-share-popup_font_fixed .b-share-popup__item{font-size:12.8px}.b-share-popup_font_fixed .b-share-popup__header,.b-share-popup_font_fixed .b-share-popup__input,.b-share-popup_font_fixed .b-share-popup__expander .b-share-popup__item,.b-share-popup_font_fixed .b-share-popup__form__link,.b-share-popup_font_fixed .b-share-popup__form__button,.b-share-popup_font_fixed .b-share-popup__form__close{font-size:11px}.b-share-popup_font_fixed .b-share-popup__yandex{font-size:10px}.b-share-form-button{font:86%/17px Verdana,Arial,sans-serif;display:-moz-inline-box;display:inline-block;position:relative;height:19px;margin:0 3px;padding:0 4px;cursor:default;white-space:nowrap;text-decoration:none!important;color:#000!important;border:none;outline:none;background:url(//xreferat.com/share/b-share-form-button.png) 0 -20px repeat-x}.b-share-form-button:link:hover,.b-share-form-button:visited:hover{color:#000!important}.b-share-form-button__before,.b-share-form-button__after{position:absolute;width:3px;height:19px;background:url(//xreferat.com/share/b-share-form-button.png)}.b-share-form-button__before{margin-left:-7px}.b-share-form-button__after{margin-left:4px;background-position:-3px 0}.b-share-form-button::-moz-focus-inner{border:none}button.b-share-form-button .b-share-form-button__before,button.b-share-form-button .b-share-form-button__after{margin-top:-1px}@-moz-document url-prefix(){button.b-share-form-button .b-share-form-button__after{margin-top:-2px;margin-left:6px}button.b-share-form-button .b-share-form-button__before{margin-top:-2px;margin-left:-9px}}SPAN.b-share-form-button:hover,.b-share-form-button_state_hover{background-position:0 -60px}SPAN.b-share-form-button:hover .b-share-form-button__before,.b-share-form-button_state_hover .b-share-form-button__before{background-position:0 -40px}SPAN.b-share-form-button:hover .b-share-form-button__after,.b-share-form-button_state_hover .b-share-form-button__after{background-position:-3px -40px}.b-share-form-button_state_pressed,.b-share-form-button_state_pressed .b-share-form-button_share{background-position:0 -100px!important}.b-share-form-button_state_pressed .b-share-form-button__before{background-position:0 -80px!important}.b-share-form-button_state_pressed .b-share-form-button__after{background-position:-3px -80px!important}button.b-share-form-button_state_pressed{overflow:visible}.b-share-form-button_icons{position:relative;padding:0;background-position:0 -20px!important}.b-share-form-button_icons .b-share-form-button__before{left:0;margin-left:-3px;background-position:0 0!important}.b-share-form-button_icons .b-share-form-button__after{z-index:-1;margin-left:0;background-position:-3px 0!important}.b-share-form-button_icons .b-share__handle{padding:2px!important}.b-share-form-button_icons .b-share__handle_more{position:relative;padding-right:6px!important;margin-right:-4px}.b-share-form-button_icons .b-share-icon{opacity:.5;background-image:url(//yandex.st/share/static/b-share-icon_size_14.png)}.b-share-form-button_icons A.b-share__handle:hover .b-share-icon{opacity:1}.b-share{font:86%/1.4545em Arial,sans-serif;display:-moz-inline-box;display:inline-block;padding:1px 1px 1px 1px!important;vertical-align:middle}.b-share .b-share-form-button{font-size:1em}.b-share__text .b-share-icon{margin:0 5px 0 0;border:none}.b-share__text{margin-right:5px}.b-share__handle{float:left;cursor:pointer;text-align:left;text-decoration:none!important;height:16px;padding:5px 3px 5px 2px!important;cursor:pointer;text-align:left;text-decoration:none!important}.b-share__handle_cursor_default{cursor:default}.b-share__handle .b-share-form-button{margin-top:-2px}.b-share__hr{display:none;float:left;width:1px;height:26px;margin:0 3px 0 2px}a.b-share__handle:hover .b-share__text{text-decoration:underline;color:#F00}.b-share_bordered{padding:0 2px 0 3px!important;border:1px solid #e4e4e4;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.b-share_bordered .b-share__hr{display:inline;background:#e4e4e4}.b-share_link{margin:-8px 0}a.b-share_link{margin:0}.b-share_link .b-share__text{text-decoration:underline;color:#1a3dc1}.b-share-form-button_share{padding-left:26px!important;vertical-align:top}.b-share-form-button_share .b-share-form-button__before{margin-left:-29px}.b-share-form-button_share .b-share-form-button__icon{position:absolute;width:20px;height:17px;margin:1px 0 0 -23px;background:url(//xreferat.com/share/b-share-form-button_share__icon.png) 0 0 no-repeat}.b-share-pseudo-link{border-bottom:1px dotted;cursor:pointer;text-decoration:none!important}.b-share_font_fixed{font-size:11px}.b-share__handle_more{font-size:9px;margin-top:-1px;color:#7b7b7b}A.b-share__handle_more:hover{color:#000}.b-share__group{float:left}.b-share-icon{float:left;display:inline;overflow:hidden;width:16px;height:16px;padding:0!important;vertical-align:top;border:0;background:url(//xreferat.com/share/b-share-icon.png) 0 99px no-repeat}.b-share-icon_vkontakte,.b-share-icon_custom{background-position:0 0}.b-share-icon_yaru,.b-share-icon_yaru_photo,.b-share-icon_yaru_wishlist{background-position:0 -17px}.b-share-icon_lj{background-position:0 -34px}.b-share-icon_twitter{background-position:0 -51px}.b-share-icon_facebook{background-position:0 -68px}.b-share-icon_moimir{background-position:0 -85px}.b-share-icon_friendfeed{background-position:0 -102px}.b-share-icon_mail{background-position:0 -119px}.b-share-icon_html{background-position:0 -136px}.b-share-icon_postcard{background-position:0 -153px}.b-share-icon_odnoklassniki{background-position:0 -170px}.b-share-icon_blogger{background-position:0 -187px}.b-share-icon_greader{background-position:0 -204px}.b-share-icon_delicious{background-position:0 -221px}.b-share-icon_gbuzz{background-position:0 -238px}.b-share-icon_linkedin{background-position:0 -255px}.b-share-icon_myspace{background-position:0 -272px}.b-share-icon_evernote{background-position:0 -289px}.b-share-icon_digg{background-position:0 -306px}.b-share-icon_juick{background-position:0 -324px}.b-share-icon_moikrug{background-position:0 -341px}.b-share-icon_yazakladki{background-position:0 -358px}.b-share-icon_liveinternet{background-position:0 -375px}.b-share-icon_tutby{background-position:0 -392px}.b-share-icon_diary{background-position:0 -409px}</style></head>
+<body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-65302985-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<div id="wrapper">
+	<div id="header">
+		<div class="logo"><a href="http://xreferat.com/"><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/logo.jpg" alt="Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ." title="Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ."></a>
+        </div>
+		<div class="search">
+			<form method="post" id="searchForm" action="http://xreferat.com/96/1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html">
+				<input name="story" type="text" value="Введите тему реферата..." onfocus="if(this.value==&#39;Введите тему реферата...&#39;)this.value=&#39;&#39;" onblur="if(this.value==&#39;&#39;)this.value=&#39;Введите тему реферата...&#39;" id="text-search">
+				<input type="submit" value="Поиск" id="submit-search">
+			</form>
+		</div>
+		<div class="link"><script type="text/javascript">xreferata();</script><script type="text/javascript" src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/link.php"></script><a class="link" href="http://xreferat.com/js/order.php" target="_blank">Заказывайте: <span class="red">рефераты - 150 р.</span> курсовые - 700 р. <span class="red">дипломы - 2500 р.</span></a></div>
+	</div>
+	<div id="middle">
+		<div id="container">
+			<div id="content">
+			<div class="rebox" id="sb"><a href="http://xreferat.com/">Xreferat.com</a> » <a href="http://xreferat.com/96/">Рефераты по транспорту</a> » Система управления положением кресла водителя</div>
+                		
+					<div class="center"><script type="text/javascript">xreferatad();</script><div id="lx_579653"></div></div>
+				
+				                <div class="rebox">
+				<div id="fullstory">
+					<h1 class="hfullstory">Система управления положением кресла водителя</h1>
+					<div class="fullstorytext">
+						<p><b>АННОТАЦИЯ</b></p><br><p>
+В этой работе
+разработаны
+алгоритм и
+система управления
+положением
+кресла водителя,
+а также синтезирована
+микроконтроллерная
+система управления.
+Она предназначена
+для увеличения
+комфортабельности
+поездки в автомобиле.
+Рассмотрены
+и оценены возможные
+факторы, влияющие
+на процесс
+управления
+объектом. 
+</p>
+<p>
+<b>THE SUMMARY</b></p><br><p>
+In this work is designed algorithm
+and managerial system by position of the easy chair of the driver, as
+well as synthesized микроконтроллерная
+managerial system. She is intended for increase comfort trips in car.
+They are considered and evaluated possible factors, influencing upon
+process of object management. 
+</p>
+<p>
+<b>РЕФЕРАТ</b></p><br><p>
+Выпускная
+работа содержит
+44 страницы
+машинописного
+текста, 11 рисунков,
+1 таблицу, 3 источника.</p>
+<p>Система
+управления,
+микроконтроллерная
+система, пространственно
+положение,
+давление</p>
+<p>Цель
+работы – разработка
+системы управления
+положением
+кресла водителя.</p>
+<p>В
+процессе выполнения
+работы были
+рассмотрены
+особенности
+управления
+автомобильным
+креслом. Синтезирован
+алгоритм управления
+креслом водителя
+с учетом различных
+внешних факторов.</p>
+<p>Разработана
+микроконтроллерная
+система управления
+положением
+кресла водителя.</p>
+<p>Рассмотрена
+экономическая
+целесообразность
+проекта.</p>
+<p>Рассмотрена
+безопасность
+и экологичность
+данного проекта.</p>
+<p>Результатом
+работы является
+система управления
+положением
+кресла водителя.</p>
+<p>
+<b>СОДЕРЖАНИЕ</b></p><br><p>ВВЕДЕНИЕ	</p>
+<p>1
+Автомобильное
+кресло, как
+объект управления	</p>
+<p>2
+Математическая
+модель	</p>
+<p>
+2.1
+Математическая
+модель двигателя
+постоянного
+тока (ДПТ)	</p>
+<p>
+2.2
+Алгоритм
+функционирования
+системы	</p>
+<p>
+3
+Разработка
+структурной
+схемы	</p>
+<p>
+4	Устройство
+отдельных
+блоков системы	</p>
+<p>
+4.1
+Микроконтроллер	</p>
+<p>
+4.2
+Канал 1	</p>
+<p>
+5
+экономическое
+обоснование
+проекта	</p>
+<p>
+5.1
+Стоимостная
+оценка разработки	</p>
+<p>
+5.2
+Стоимостная
+оценка изделия	</p>
+<p>
+6
+Безопасность
+и экологичность
+проекта	</p>
+<p>
+6.1
+Системный
+анализ безопасности
+и надежности
+при эксплуатации	</p>
+<p>
+6.2
+Меры по устранению
+отказов	</p>
+<p>
+6.3
+Защита окружающей
+природной среды
+и утлизация
+устройства	</p>
+<p>
+7
+Социальная
+значимость
+проекта	</p>
+<p>
+Заключение	</p>
+<p>
+СПИСОК
+литературы	</p>
+<p>
+<b>ВЕДЕНИЕ</b></p><br><p>
+В последнее
+время в связи
+с развитием
+непроизводственных
+сфер труда,
+человек стал
+много времени
+проводить сидя.
+Для того, что
+бы длительное
+нахождение
+в сидячем положении
+не доставляло
+больших неудобств,
+а как следствие
+не отвлекало
+от работы, сиденье
+должно быть
+удобным. Однако
+это не просто,
+так как у каждого
+человека
+индивидуальные
+потребности,
+связанные с
+формой тела,
+полнотой и
+рядом других
+факторов. Но
+производить
+сиденья для
+каждого человека
+индивидуально
+не представляется
+возможным.</p>
+<p>
+Существует
+ряд видов
+деятельности,
+где сидеть
+необходимо.
+Примером может
+служить вождение
+автомобиля.
+Отличительной
+особенностью
+здесь является
+то, что водитель
+не может отвлекаться
+от дороги, что
+затрудняет
+его действия,
+в том числе в
+целях обеспечения
+собственного
+комфорта. Для
+водителя во
+время движения
+является проблемой
+изменить форму
+сиденья, так
+как это затребует
+некоторых
+усилий и отвлечения
+внимания от
+дороги, что
+может привести
+к печальным
+последствиям.
+Однако при
+длительных
+поездках изменение
+формы сидения
+необходимо,
+так как тело
+устает, находясь
+в одном и том
+же положение
+без движения.
+Решением этой
+проблемы может
+служить сиденье,
+оснащенное
+приводами и
+системой управления
+к ним. Такая
+система будет
+отбирать минимум
+внимания и не
+потребует
+никаких физических
+затрат водителя.
+
+</p>
+<p><b>Тема
+дипломного
+проекта является
+актуальной</b>,
+так как целью
+своей имеет
+создание комфорта
+для людей находящихся
+в автомобиле,
+что в свою очередь
+является немаловажным
+фактором при
+обеспечении
+безопасности
+на дороге.</p>
+<p>
+<b>Целью дипломной
+работы </b>является
+разработка
+системы управления
+положением
+кресла водителя.</p>
+<p><b>В
+работе решаются
+следующие
+задачи</b>:</p>
+<p>-
+разработка
+моделей и алгоритмов
+управления
+объектом с
+учетом особенностей
+данного объекта;</p>
+<p>-
+разработка
+структурной
+и принципиальной
+схем системы
+управления.</p>
+<p>Результаты
+работы являются
+практически
+полезными, т.к.
+могут найти
+применение
+при разработке
+реальных систем
+управления
+для применения
+их в автомобильных
+креслах, или
+же офисной
+мебели.</p>
+<p>В
+первом разделе
+данной работы
+рассматриваются
+принципы построения
+управляемого
+объекта, его
+структура,
+особенности
+и проблематика
+управления
+системой на
+различных
+этапах управления.</p>
+<p>Во
+втором разделе
+определяются
+входные, возмущающие
+и выходные
+переменные,
+описывается
+модель управляющего
+элемента,
+формулируется
+алгоритм
+функционирования
+системы в целом.</p>
+<p>В
+третьем разделе
+описывается
+структурная
+схема системы
+в целом и основные
+принципы ее
+функционирования.
+
+</p>
+<p>
+В четвертом
+разделе производится
+детальное
+описание частей
+системы. 
+</p>
+<p>В
+пятом разделе
+приводится
+экономическое
+обоснование
+актуальности
+разрабатываемого
+проекта, определяются
+капитальные
+и энергетические
+затраты.</p>
+<p>
+В шестом
+разделе производится
+оценка напряженности
+труда разработчика,
+анализ условий
+труда разработчика
+и мероприятия
+по устранению
+вредных факторов,
+экологичность
+работы.</p>
+<p>
+<b>1 Автомобильное
+кресло, как
+объект управления</b></p><br><p>
+Суть управления
+автомобильным
+креслом состоит
+в том, чтобы
+расположить
+его необходимым
+образом в трехмерном
+пространстве.
+У него должен
+меняться угол
+наклона спинки,
+положение
+подушки и уровень
+подъема подголовника.</p>
+<p>
+Схематически
+автомобильное
+кресло с возможными
+вариантами
+регулировок
+показано на
+рис. 1.</p><br><p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288890_1.png" alt="Система управления положением кресла водителя" width="879" height="419" border="0"></p>
+<p>
+<b>Рис. 11 </b>Схема
+кресла с возможными
+вариантами
+регулировок</p><br><p>
+На рис. 1 изображена
+пространственная
+модель кресла.
+Оно состоит
+из основания
+сиденья, подушки,
+спинки и подголовника.
+Основание
+сиденья перемещается
+в продольном
+направлении,
+в заданных
+пределах от
+своего начального
+до конечного
+положения. У
+подушки сидения
+различают
+переднюю и
+заднюю кромки.
+И передняя и
+задняя кромки
+могут подниматься
+и опускаться
+в заданных
+пределах. Спинка
+сиденья может
+менять свой
+угол наклона,
+а подголовник
+опускаться
+и подниматься.</p>
+<p>
+Кроме изменения
+пространственного
+положения, в
+данной модели
+может быть
+предусмотрено
+изменение формы
+спинки подушки.
+Для этого оно
+должна быть
+оснащена датчиками,
+расположенными
+как в спинке,
+так и в подушке.
+Схематическое
+расположение
+датчиков изображено
+на рис. 2.</p>
+<p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288891_2.gif" alt="Система управления положением кресла водителя" width="489" height="454" border="0"></p>
+<p><b>Рис.
+11 </b>Расположение
+датчиков на
+сиденье</p><br><p>
+На рис. 2 цифрами
+обозначены
+датчики давления,
+установленные
+в непосредственной
+близости с
+приводами,
+осуществляющими
+движение небольшой
+части сиденья
+с целью уменьшения
+давления на
+него. Подобная
+система позволит
+равномерно
+распределить
+нагрузку тела
+на сиденье, что
+должно повысить
+комфортабельность.
+Особенностью
+этой части
+является то,
+что она является
+полностью
+автономной,
+т.е. после ее
+запуска (нажатия
+соответствующей
+кнопки) она
+сама выполнит
+настойку, которая
+будет длиться
+некоторое,
+заранее заданное,
+время. Необходимо
+только, чтобы
+с начала ее
+работы и до
+конца человек
+сидел в сиденье,
+иначе настройка
+выполнена не
+будет. Так же
+желательно,
+что бы при ее
+работе человек
+сидел как можно
+спокойнее,
+иначе это может
+вызвать неправильные
+показания
+датчиков, что
+так же приведет
+к неверной
+настройке.</p>
+<p>
+Панель управления
+всей системой
+может быть
+выполнена в
+виде набора
+кнопок или
+тумблеров,
+которые должны
+иметь три положения
+переключения,
+т.е. два рабочих
+и среднее, в
+котором контакты
+будут разомкнуты.
+Использование
+тумблеров в
+некоторой
+степени упростит
+управление,
+так как если
+для системы
+управления
+формой сиденья
+достаточно
+кратковременного
+замыкания
+контактов, то
+для управления
+его пространственным
+положением
+контакт необходимо
+сохранять до
+тех пор, пока
+требуемая часть
+не перейдет
+в желаемое
+положение.</p>
+<p>
+При разработке
+данной системы,
+появляется
+ряд сложностей,
+с которыми
+необходимо
+справляться.
+К их числу можно
+отнести такие
+проблемы как:
+выбор двигателей,
+которые должны
+работать от
+бортовой сети
+автомобиля,
+т.е. 12 В, и при этом
+способных
+поднять вес
+человека;
+нестабильность
+бортовой сети
+автомобиля.</p>
+<p>
+Для того чтобы
+поднять человека,
+двигатель
+должен создавать
+на выходе достаточно
+большой момент.
+Однако, учитывая,
+что напряжение
+питания двигателя
+ограничено
+напряжением
+бортовой сети
+автомобиля.
+Для увеличения
+момента на
+выходе двигателя
+необходимо
+использовать
+редуктор, который,
+понижая скорость
+на выходе, увеличит
+момент вращения.</p>
+<p>
+Как известно
+автомобиль
+в то время, когда
+он не движется,
+питается от
+аккумулятора,
+который имеет
+на выходе достаточно
+стабильное
+постоянное
+напряжение,
+в котором отсутствую
+переменные
+составляющие.
+Однако во время
+движения питание
+бортовой сети
+автомобиля
+переключается
+на генератор,
+который выдает
+не всегда стабильное
+напряжение
+и может иметь
+высокочувствительные
+пульсации.
+Подобные импульсы
+могут привести
+к нестабильной
+работе системы,
+а даже способны
+испортить
+элементы схемы,
+в частности
+микроконтроллер,
+замена которого
+потребует
+дополнительных
+затрат. Для
+того, что бы
+устранить
+подобные случаи,
+на входе системы
+необходимо
+использовать
+сглаживающие
+элементы, в
+частности
+фильтры нижних
+частот с достаточно
+узкой полосой
+пропускания.</p>
+<p>
+При выполнении
+данной работы
+должна будет
+получена система
+управления,
+взаимодействующая
+с человеком.
+Эта система
+должна получать
+сигналы от
+пользователя
+(водителя), которые
+после обработки
+идут на исполнительные
+механизмы. Так
+же должны
+анализироваться
+сигналы, поступающие
+с датчиков, на
+систему, которые
+либо накладывают
+ограничения
+на работу системы,
+либо полностью
+определяют
+ее. Так как в
+проекте решаются
+две относительно
+не связанные
+задачи – изменение
+пространственного
+положения
+кресла и изменение
+его формы, всю
+систему можно
+разбить на две
+составляющие
+подсистемы.
+Управление
+обоими частями
+должно осуществляться
+одним элементом,
+в качестве
+которого выступает
+микроконтроллер.
+Микроконтроллер
+также связывает
+панель управления
+с системой.</p>
+<p>
+<b>2 Математическая
+модель</b></p><br><p>
+При выполнении
+данной работы
+должна быть
+получена система
+управления,
+взаимодействующая
+с человеком.
+Эта система
+должна получать
+сигналы от
+пользователя
+(водителя), которые
+после обработки
+идут на исполнительные
+механизмы. Так
+же должны
+анализироваться
+сигналы, поступающие
+с датчиков, на
+систему, которые
+либо накладывают
+ограничения
+на работу системы,
+либо полностью
+определяют
+ее. Так как в
+проекте решаются
+две относительно
+не связанные
+задачи – изменение
+пространственного
+положения
+кресла и изменение
+его формы, всю
+систему можно
+разбить на две
+составляющие
+подсистемы.
+Управление
+обоими частями
+должно осуществляться
+одним элементом,
+в качестве
+которого выступает
+микроконтроллер.
+Микроконтроллер
+также связывает
+панель управления
+с системой.</p>
+<p>
+При работе
+на любую систему
+поступает ряд
+воздействий,
+часть из которых
+предусмотрена
+самой системой,
+как правило,
+контролируема
+и называется
+вектором входных
+воздействий,
+а часть является
+неконтролируемой,
+оказывая в
+основном вредные
+воздействия,
+с которыми
+необходимо
+бороться, такие
+воздействия
+называются
+возмущающими
+или помехой.
+Сама система,
+обработав
+входные воздействия,
+с учетом возмущения,
+формирует на
+выходе некоторый
+выходной сигнал.</p>
+<p>
+При рассмотрении
+данной системы
+входным воздействием
+является сигнал,
+поступающий
+с панели управления.
+Этот сигнал
+представляет
+собой единичный
+скачок.</p>
+<p>
+На выходе
+системы стоит
+двигатель,
+который осуществляет
+изменение
+пространственного
+положения
+сиденья, следовательно,
+именно с него
+наблюдается
+выходное воздействие,
+оказываемое
+на сиденье.
+Данное воздействие
+представляет
+собой угол
+поворота двигателя,
+который в случае
+спинки передается
+непосредственно
+на сиденье,
+либо преобразуется
+в поступательное
+движение подушки
+или подголовника.</p>
+<p>
+Возмущающих
+воздействий
+в системе, как
+правило, много.
+Однако в данной
+системе можно
+выделить одно,
+наиболее значимое
+воздействие,
+оказываемое
+человеком, а
+именно его
+массой. Это
+воздействие
+представляет
+собой момент
+сопротивления
+создаваемый
+на валу двигателя,
+что может привести
+к замедлению
+скорости последнего
+вплоть до полной
+остановки.</p><br><p>
+<b>2.1 Математическая
+модель двигателя
+постоянного
+тока (ДПТ)</b></p><br><p>Структурная
+схема двигателя
+постоянного
+тока представлена
+на рис. 3</p><br><p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288891_3.gif" alt="Система управления положением кресла водителя" width="408" height="152" border="0"></p>
+<p>
+<b>Рис. 11 </b>Структурная
+схема ДПТ</p><br><p>На рис.
+3 использованы
+следующие
+обозначения:</p>
+<p>Д –
+двигатель</p>
+<p>Мс –
+момент сопротивления,
+приложенный
+к валу двигателя</p>
+<p>&#969;Д
+- скорость вращения
+вала двигателя</p>
+<p>&#969;
+– скорость
+вращения вала
+с учетом момента
+сопротивления</p>
+<p>Расчётная
+схема двигателя
+постоянного
+тока независимого
+возбуждения
+(ДПТ НВ) представлена
+на рис. 4. 
+</p>
+<p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288891_4.png" alt="Система управления положением кресла водителя" width="461" height="257" border="0"></p>
+<p>
+<b>Рис. 11 </b>Расчётная
+схема ДПТ</p><br><p>На рис.
+4 использованы
+следующие
+обозначения:</p>
+
+	<p>Lя
+	– полная индуктивность
+	цепи якоря ДПТ
+	НВ, Гн;</p>
+	<p>Rя
+	– полное активное
+	сопротивление
+	цепи якоря,
+	Ом;</p>
+	<p>Е
+	– ЭДС вращения
+	якоря, В;</p>
+	<p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288891_5.gif" alt="Система управления положением кресла водителя" width="21" height="28" align="BOTTOM" border="0">
+	– ток в цепи
+	якоря, А;</p>
+	<p>w
+	– механическая
+	угловая скорость,
+	рад/с;</p>
+	<p>Lн
+	– полная индуктивность
+	в цепи якоря
+	тормоза, Гн;</p>
+	<p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288892_6.gif" alt="Система управления положением кресла водителя" width="25" height="26" align="BOTTOM" border="0">
+	– полное
+	активное
+	сопротивление
+	цепи нагрузки,
+	Ом.</p>
+
+<p>G
+– источник
+постоянного
+напряжения</p>
+<p>Kн
+– коэффициент
+нагрузки</p>
+<p>Фд
+– магнитный
+поток</p>
+<p>Из
+литературы
+известно, что
+математическая
+модель ДПТ НВ
+имеет следующий
+вид:</p>
+<p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288892_7.gif" alt="Система управления положением кресла водителя" width="258" height="197" align="BOTTOM" border="0"></p>
+<p>
+</p><table dir="LTR" align="LEFT" hspace="13" border="0" cellpadding="8" cellspacing="0"><tbody><tr>
+		<td valign="TOP">
+			<p>(2.1)</p><br><p>(2.2)</p>
+			<p>(2.3)</p><br><p>(2.4)</p>
+		</td>
+	</tr>
+</tbody></table><br>
+<p></p>
+<p>
+где, U –
+напряжение
+цепи якоря ДПТ
+НВ, В;</p>
+<p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288892_8.gif" alt="Система управления положением кресла водителя" width="93" height="28" align="BOTTOM" border="0">
+– электромагнитный
+коэффициент
+двигателя;</p>
+<p>
+М, Мс – соответственно
+момент развиваемый
+двигателем
+и момент статического
+сопротивления,
+развиваемый
+тормозом на
+валу двигателя,
+
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288892_9.gif" alt="Система управления положением кресла водителя" width="42" height="19" align="BOTTOM" border="0">;</p>
+<p>
+J – момент
+инерции, 
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288892_10.gif" alt="Система управления положением кресла водителя" width="47" height="22" align="BOTTOM" border="0">;</p>
+<p>
+Хн – полное
+сопротивление
+цепи нагрузки,
+Ом.</p>
+<p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288893_11.gif" alt="Система управления положением кресла водителя" width="217" height="31" align="BOTTOM" border="0"></p>
+<p>
+Подставляя
+уравнения (2.2)
+и (2.3) в уравнение
+(2.4) получаем:</p><br><p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288893_12.gif" alt="Система управления положением кресла водителя" width="189" height="54" align="LEFT"><br>
+</p>
+<p>
+(2.5)</p><br><p>где,
+
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288893_13.gif" alt="Система управления положением кресла водителя" width="108" height="28" align="BOTTOM" border="0">
+– электромагнитный
+коэффициент
+тормоза двигателя.</p>
+<p>Продифференцируем
+данное уравнение
+и подставим
+его в уравнение
+(2.1):</p><br><p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288893_14.gif" alt="Система управления положением кресла водителя" width="450" height="60" border="0">
+	 	 (2.6)</p><br><p>Приведём
+данное уравнение
+к стандартному
+виду</p>
+<p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288893_15.gif" alt="Система управления положением кресла водителя" width="188" height="40" align="BOTTOM" border="0">
+следовательно:	</p>
+<p>
+</p><table dir="LTR" align="RIGHT" hspace="13" border="0" cellpadding="8" cellspacing="0"><tbody><tr>
+		<td valign="TOP"><br><p>(2.7)</p>
+		</td>
+	</tr>
+</tbody></table><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288894_16.gif" alt="Система управления положением кресла водителя" width="473" height="60" border="0">,<p></p><br><p>
+где,</p>
+<p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288894_17.gif" alt="Система управления положением кресла водителя" width="13" height="24" align="BOTTOM" border="0"><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288894_18.gif" alt="Система управления положением кресла водителя" width="213" height="168" align="BOTTOM" border="0"></p><br><p>
+откуда</p>
+<p>
+</p><table dir="LTR" align="RIGHT" hspace="13" border="0" cellpadding="8" cellspacing="0"><tbody><tr>
+		<td valign="TOP">
+			<p>(2.8)</p><br><p>(2.9)</p>
+		</td>
+	</tr>
+</tbody></table><br>
+<p></p>
+<p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288894_17.gif" alt="Система управления положением кресла водителя" width="13" height="24" align="BOTTOM" border="0"><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288894_19.gif" alt="Система управления положением кресла водителя" width="224" height="76" align="BOTTOM" border="0">.</p><br><p>
+Учитывая
+что 
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288897_20.gif" alt="Система управления положением кресла водителя" width="69" height="22" align="BOTTOM" border="0">&lt;&lt;<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288897_21.gif" alt="Система управления положением кресла водителя" width="56" height="24" align="BOTTOM" border="0">,
+тогда</p><br><p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288897_22.gif" alt="Система управления положением кресла водителя" width="162" height="92" align="BOTTOM" border="0">.
+
+</p><br><p>Из
+выражения (2.9)
+можно сделать
+вывод, что при
+увеличении
+момента сопротивления
+тормоза путём
+уменьшения
+Хн, колебательный
+процесс, характерный
+для двигателя,
+работающего
+без нагрузки,
+вырождается
+в апериодический.</p>
+<p>
+Рассчитаем
+параметры
+двигателя. Для
+этого перепишем
+уравнение
+(2.7), считая, что
+момент сопротивления
+на валу двигателя
+равен нулю,
+т.е. Хн равно
+бесконечности.</p><br><p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288897_23.gif" alt="Система управления положением кресла водителя" width="274" height="70" align="BOTTOM" border="0">.			(2.10)</p><br><p>Произведём
+замену 
+</p><br><p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288897_24.gif" alt="Система управления положением кресла водителя" width="82" height="49" align="BOTTOM" border="0">,
+
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288898_25.gif" alt="Система управления положением кресла водителя" width="74" height="53" align="BOTTOM" border="0">.</p>
+<p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288898_26.gif" alt="Система управления положением кресла водителя" width="228" height="61" align="BOTTOM" border="0">.	
+				 (2.11)</p>
+<p></p><table dir="LTR" align="RIGHT" hspace="13" border="0" cellpadding="8" cellspacing="0"><tbody><tr>
+		<td valign="TOP"><br><p>(2.12)</p>
+		</td>
+	</tr>
+</tbody></table><br>
+<p></p>
+<p>Тогда
+передаточная
+функция двигателя
+имеет вид:</p><br><p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288898_27.gif" alt="Система управления положением кресла водителя" width="224" height="58" align="BOTTOM" border="0"></p>
+<p>
+<br>
+</p>
+<p>
+<b>2.2 Алгоритм
+функционирования
+системы</b></p><br><p>
+Вся система
+работает следующим
+образом: пользователь
+нажимает на
+панели управления
+кнопку, отвечающую
+за то действие,
+которое ему
+необходимо,
+и на микроконтроллер
+поступает
+сигнал. До тех
+пор пока нажата
+одна любая
+кнопка, микроконтроллер
+не воспринимает
+сигналов от
+остальных
+кнопок. Для
+начала, предположим,
+что желаемая
+операция является
+изменение
+пространственного
+положения
+кресла. В этом
+случае микроконтроллер
+определяет,
+какой привод
+запрашивается.
+Затем производится
+проверка сигналов
+с датчиков с
+целью определить
+не находится
+ли двигатель
+в крайнем положение
+с той стороны,
+в которую будет
+осуществляться
+движение. Если
+это подтверждается,
+то дальнейших
+действий не
+осуществляется.
+Если же есть
+возможность
+движения для
+двигателя, то
+микроконтроллер
+устанавливает
+разрешающий
+сигнал на выходе.
+Так же микроконтроллером
+устанавливается
+направление
+движения двигателя,
+и какой двигатель
+будет задействован.
+Движение
+осуществляется
+до тех пор, пока
+нажата кнопка
+на панели управления.</p>
+<p>
+Рассмотрим
+случай, когда
+была нажата
+кнопка для
+изменения формы
+сидения. Микроконтроллер
+устанавливает
+разрешающий
+сигнал на работу
+системы. После
+этого аппаратно
+сравниваются
+сигналы с пар
+датчиков нагрузки.
+На основе сравнения
+осуществляется
+движение приводов.
+В первую очередь
+сравниваются
+сигналы с датчиков
+2 и 3, если они не
+равны, то включаются
+соответствующие
+приводы, двигающиеся
+в противоположные
+стороны, причем
+привод, давление,
+на датчик которого
+было больше,
+движется в
+отрицательном
+или обратном
+направлении,
+а другой привод
+движется в
+положительном
+и или прямом
+направлении.
+Положительное
+и отрицательное
+направления
+выбраны условно,
+положительное
+направление
+– это направление
+движения к
+человеку. Через
+некоторое,
+заранее заданное
+время, теоретически
+достаточное
+для установления
+приводов в
+относительное
+равновесие,
+т.е. уравновешивания
+давление между
+датчиками,
+микроконтроллер
+посылает сигнал,
+и система
+переключается
+на следующую
+пару датчиков.
+Следующей парой
+являются датчики
+2 и 4. В этом случае,
+после сравнения,
+в движение
+приводится
+только привод,
+соответствующий
+датчику 4, с целью
+подстройки
+его под датчик
+2. 
+</p>
+<p>
+Дальше по
+такому же принципу
+производится
+сравнение
+сигналов с
+оставшихся
+двух датчиков,
+расположенных
+на спинке сиденья.</p>
+<p>После
+того как спинка
+настроена,
+осуществляется
+подстройка
+подушки сиденья.
+Настройка
+осуществляется
+так же, как в
+случае с датчиками
+2 и 3.</p><br><p>
+<b>3 Разработка
+структурной
+схемы</b></p><br><p>
+Система
+управления
+креслом водителя,
+разрабатываемая
+в данном проекте,
+как было сказано
+ранее, осуществляет
+действия в двух
+направлениях:
+изменение
+пространственного
+положения
+кресла, изменение
+его формы. При
+выполнении
+поставленных
+задач на управляющие
+элементы (двигатели)
+поступают
+различные
+задающие воздействия.
+Эта особенность
+приводит к
+необходимости
+реализации
+системы, включающей
+в себя два канала
+управления,
+один из которых
+отвечает за
+пространственное
+положение
+сиденья, другой
+за форму. 
+</p>
+<p>
+Структурная
+схема системы
+управления
+креслом водителя
+изображена
+на рис. 5</p><br><p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288898_28.gif" alt="Система управления положением кресла водителя" width="662" height="271" border="0">Рис.
+11 <b>Структурная
+схема системы</b></p><br><p>
+В данной схеме
+приняты следующие
+обозначения:
+МК – микроконтроллер,
+БФУВ – блок
+формирования
+управляющих
+импульсов.</p>
+<p>
+Данная система
+работает следующим
+образом: по
+приходу сигнала
+с панели управления
+микроконтроллер
+проверяет
+запрашиваемый
+привод на нахождение
+в крайнем положении,
+затем если это
+не подтверждается,
+устанавливает
+разрешающий
+сигнал на требуемый
+канал системы
+управления.
+Если требуемой
+операцией
+является изменение
+пространственного
+положения
+кресла, то
+микроконтроллер
+устанавливает
+разрешающий
+сигнал на первом
+ключевом элементе
+Канала 1, необходимого
+для подключения
+последующей
+схемы к питанию.
+Затем, зависимости
+от необходимого
+направления
+движения двигателя,
+микроконтроллером
+устанавливается
+«0» или «1» на
+управление
+инвертором.
+После этого
+сигнал поступает
+на второй ключевой
+элемент Канала
+1, отвечающий
+за подключение
+необходимого
+двигателя к
+цепи. В результате
+исполнительный
+двигатель
+приводит желаемую
+часть сиденья
+в движение,
+которое осуществляется
+до тех пор пока
+не исчезнет
+сигнал с панели
+управления,
+или привод не
+перейдет в
+крайнее положение,
+в результате
+чего на выходе
+датчика (Блок
+датчиков 1) появится
+сигнал, который
+запретит дальнейшую
+работу микроконтроллера,
+а следовательно
+и двигателя.
+
+</p>
+<p>
+Рассмотрим
+случай, когда
+в работу включается
+Канал 2. В этом
+случае БФУВ
+сравнивает
+сигналы, приходящие
+с датчиков.
+Сравнение
+осуществляется
+в определенной
+последовательности,
+которую устанавливает
+микроконтроллер,
+посылая с заданным
+интервалом
+сигналы, подключающие
+следующую пару
+датчиков, отключая
+предварительно
+предыдущую.
+После сравнения
+устанавливается
+разрешающий
+сигнал на ключевом
+элементе Канала
+2, в результате
+чего запускается
+пара двигателей,
+движущихся
+в противоположные
+стороны, с целью
+уравновесить
+давление, действующее
+на датчики.
+Весь процесс
+идет до тех
+пор, пока не
+будет произведено
+сравнение
+сигналов со
+всех датчиков.
+
+</p>
+<p>
+<b>4. Устройство
+отдельных
+блоков системы</b></p><br><p>
+Как видно
+из структурной
+схемы изображенной
+на рис. 5, ее можно
+разбить на
+несколько
+функциональных
+блоков: панель
+управления,
+микроконтроллер,
+Канал 1, Канал
+2, объект управлении.
+Данное разбиение
+сделано, исходя
+из функционального
+назначения
+приведенных
+блоков. 
+</p>
+<p>
+Панель управления,
+состоящая из
+набора кнопок,
+не представляет
+особого интереса.
+Объектом управления
+является само
+кресло, которое
+достаточно
+подробно было
+расписано в
+первом разделе.
+
+</p>
+<p>
+Не известными
+остаются
+микроконтроллер,
+который отвечает
+за выбор каналов
+управления,
+и их функционирования,
+а также Канал
+1 и Канал 2. Однако
+Канал 2, ввиду
+его сложности
+и отсутствия
+на данный момент
+необходимых
+данных по его
+составляющим,
+в рамках данного
+проекта более
+детально рассмотрен
+не будет. Его
+рассмотрение
+будет произведено,
+в случае если
+работа будет
+продолжена,
+и результаты
+будут представлены
+на инженерной
+работе.</p>
+<p>
+<br>
+</p>
+<p>
+<b>4.1 Микроконтроллер</b></p><br><p>
+Реализация
+концепции
+RISC-архитектуры
+в 8-разрядных
+микроконтроллерах
+существенно
+расширила среду
+их применения.
+К традиционным
+приложениям
+таких микроконтроллеров
+(телекоммуникации,
+системы сбора
+данных, системы
+охраны, автоэлектроника,
+системы отображения
+информации
+и т. д.) сегодня
+прибавляются
+такие, где раньше
+использовались
+только более
+мощные 16– и
+32–разрядные
+процессоры
+с функцией
+цифровой обработки
+сигналов, например,
+обработка
+видеосигналов
+или управление
+электроприводом
+[16].</p>
+<p>
+Компания
+ATMEL – один
+из мировых
+лидеров в
+производстве
+широкого спектра
+микросхем
+энергонезависимой
+памяти, FLASH-микроконтроллеров
+и микросхем
+программируемой
+логики, взяла
+старт по разработке
+RISC-микроконтроллеров
+в середине 90-х
+годов, используя
+все свои технические
+решения, накопленные
+к этому времени.</p>
+<p>
+AVR-архитектура,
+объединяет
+мощный гарвардский
+RISC-процессор
+с раздельным
+доступом к
+памяти программ
+и данных, 32 регистра
+общего назначения,
+каждый из которых
+может работать
+как регистр-
+аккумулятор,
+и развитую
+систему команд
+фиксированной
+16-бит длины.
+Большинство
+команд выполняются
+за один машинный
+такт с одновременным
+исполнением
+текущей и выборкой
+следующей
+команды. 32 регистра
+общего назначения
+образуют регистровый
+файл быстрого
+доступа, где
+каждый регистр
+напрямую связан
+с АЛУ. За один
+такт из регистрового
+файла выбираются
+два операнда,
+выполняется
+операция, и
+результат
+возвращается
+в регистровый
+файл. Все микроконтроллеры
+AVR имеют
+встроенную
+память программ
+с возможностью
+внутрисхемного
+программирования
+через последовательный
+интерфейс [17].</p>
+<p>
+Для целей
+управления
+микроконтроллеры
+AVR делает
+привлекательным
+их хорошо развитая
+периферия,
+которая включает
+в себя: таймеры–счётчики,
+широтно-импульсные
+модуляторы,
+поддержку
+внешних прерываний,
+аналоговые
+компараторы,
+встроенный
+АЦП, параллельные
+порты ввода
+и вывода, интерфейсы,
+сторожевой
+таймер и устройство
+сброса по включению
+питания. Компания
+ATMEL предлагает
+бесплатную
+программную
+среду AVR-studio
+для отладки
+программ в
+режиме симуляции
+на программном
+отладчике, а
+также для работы
+непосредственно
+с внутрисхемным
+эмулятором.</p>
+<p>
+Все эти качества
+превращают
+AVR-микроконтроллеры
+в мощный инструмент
+для построения
+современных,
+высокопроизводительных
+и экономичных
+контроллеров
+различного
+назначения.</p>
+<p>
+В рамках
+единой базовой
+архитектуры
+AVR-микроконтроллеры
+подразделяются
+на три подсемейства:</p>
+
+	<p>Classic
+	AVR основная
+	линия микроконтроллеров
+	с производительностью
+	отдельных
+	модификаций
+	до 16 MIPS;</p>
+	<p>Mega
+	AVR для сложных
+	приложений,
+	требующих
+	большого объема
+	памяти;</p>
+	<p>tiny
+	AVR низкостоимостные
+	микроконтроллеры
+	в 8-выводном
+	исполнении
+	[17].</p>
+
+<p>
+Для выбора
+конкретного
+микроконтроллера
+из всего модельного
+ряда AVR
+проанализируем
+техническое
+задание и структурную
+схему. Микроконтроллер
+должен содержать:
+таймер; не менее
+11 линий ввода-вывода.</p>
+<p>
+Исходя из
+выше сказанного,
+и из стремления
+уменьшиться
+стоимость
+изделия, можно
+заключить, что
+в данной схеме
+подходящим
+для использования
+является
+микроконтроллер
+семейства
+Classic AVR,
+AT90S2313.
+Расположение
+его выводов
+изображено
+на рис. 6:</p><br><p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288899_29.png" alt="Система управления положением кресла водителя" width="299" height="229" align="BOTTOM" border="0"></p>
+<p><b>Рис.
+11 </b>Расположение
+выводов микроконтроллера
+AT90S2313</p><br><p>
+Перечислим
+его основные
+свойства:</p>
+
+	<p>AVR®
+	- высокая
+	производительность
+	и RISC архитектура
+	с низким
+	энергопотреблением
+	
+	</p>
+	<p>118
+	мощных инструкций
+	- большинство
+	из них выполняются
+	за один такт
+	
+	</p>
+	<p>2
+	Кбайт Flash- памяти
+	с поддержкой
+	внутрисистемного
+	программирования
+	SPI- последовательный
+	интерфейс для
+	загрузки
+	программного
+	кода Ресурс:
+	1000 циклов записи/стирания
+	
+	</p>
+	<p>128
+	байта EEPROM: Ресурс:
+	100 000 циклов запись/
+	стирание 
+	</p>
+	<p>Рабочие
+	регистры общего
+	назначения
+	32 х 8 
+	</p>
+	<p>15
+	программируемых
+	линий I/O 
+	</p>
+	<p>-
+	питание VCC: от
+	2.7 В до 6.0 В; 
+	</p>
+	<p>Полностью
+	статический
+	режим работы:
+	От 0 до 10 МГц, при
+	питании от 4.0
+	В до 6.0 В От 0 до 4
+	МГц, при питании
+	от 2.7 В до 6.0 В 
+	</p>
+	<p>Производительность,
+	вплоть до 10 MIPS
+	при 10 МГц 
+	</p>
+	<p>Один
+	8-ми разрядный
+	таймер/счетчик
+	с отдельным
+	предварительным
+	делителем
+	частоты 
+	</p>
+	<p>Один
+	16-ти разрядный
+	таймер/счетчик
+	с отдельным
+	предварительным
+	делителем
+	частоты с режимами
+	сравнения и
+	захвата 
+	</p>
+	<p>Полнодуплексный
+	UART 
+	</p>
+	<p>Выбираемые
+	8, 9, или 10-ти разрядные
+	режимы широтно-импульсной
+	модуляции
+	(ШИМ) 
+	</p>
+	<p>Внешние
+	и внутренние
+	источники
+	прерывания
+	
+	</p>
+	<p>Программируемый
+	следящий таймер
+	с встроенным
+	тактовым генератором
+	
+	</p>
+	<p>Встроенный
+	аналоговый
+	компаратор
+	
+	</p>
+	<p>Экономичные
+	режимы ожидания
+	и пониженного
+	энергопотребления
+	
+	</p>
+	<p>Программируемая
+	блокировка
+	для безопасности
+	программного
+	обеспечения
+	
+	</p>
+	<p>20
+	выводов</p>
+
+<p>
+<br>
+</p>
+<p>
+<b>4.2 Канал
+1</b></p><br><p>
+В данной
+части системы,
+отвечающей
+за пространственное
+положение
+кресла, главную
+роль играет
+микропроцессор.
+Сам Канал 1
+представляет
+собой набор
+ключевых элементов.
+Первый ключ
+подключает
+дальнейшую
+часть схемы
+к питанию. В
+качестве такого
+ключа может
+использоваться
+оптореле, схема
+которого приведена
+рис. 7:</p><br><p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288899_30.gif" alt="Система управления положением кресла водителя" width="295" height="128" align="BOTTOM" border="0"></p>
+<p>
+<b>Рис. 11 </b>Оптореле</p><br><p>
+Здесь Упр
+– управляющий
+сигнал с микроконтроллера,
+Вх – вход, т.е.
+напряжение
+питания, Вых
+– выход, точка
+подключения
+к дальнейшей
+части схемы.
+Через этот ключ
+в схему поступает
+«плюс» питания.
+«Минус» питания
+подключен
+постоянно.
+Использование
+оптореле удобно
+в смысле безопасности
+микроконтроллера,
+так как оно
+обеспечивает
+гальваническую
+развязку
+микроконтроллера
+со схемой.</p>
+<p>
+После первого
+ключа в схеме
+идет инвертор,
+управляемый
+микроконтроллером.
+В качестве
+инвертора
+используется
+реле, у которого
+через нормально
+замкнутые
+контакты двигатели
+подключены
+в «прямом»
+направлении
+(«прямое» направление
+выбрано условно).
+Следовательно,
+если необходимо
+что бы двигатели
+двигались в
+«прямом» направлении
+необходимо
+что бы питание
+реле было отключено,
+т.е. на линии
+микроконтроллера
+отвечающей
+за этот элемент
+был «0». Принципиальная
+схема инвертора
+изображена
+на рис.8.</p>
+<p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288899_31.gif" alt="Система управления положением кресла водителя" width="266" height="110" align="BOTTOM" border="0"></p>
+<p>
+<b>Рис. 11 </b>Принципиальная
+схема инвертора</p><br><p>
+Здесь К1 –
+реле, Вх – вход
+данной части
+схемы, где «+»
+– выход предыдущего
+звена; Вых и
+Упр имеют тоже
+значение что
+и в предыдущей
+схеме. Значение
+символа «*»
+будет рассмотрено
+дальше. Как уже
+говорилось
+выше, применение
+инвертора
+связано с
+необходимостью
+менять направление
+вращения двигателей.
+Изменять направление
+движения можно,
+используя
+механические
+схемы. Однако
+такой способ
+будет более
+громоздким
+и дорогостоящим,
+а следовательно
+– нецелесообразным.</p>
+<p>
+Дальше по
+схеме идут
+ключевые элементы,
+отвечающие
+за подключение
+нужного двигателя
+к схеме. Эта
+часть схемы
+необходима
+для подключения
+конкретного
+двигателя к
+питанию. Выбор
+двигателя
+осуществляется
+микроконтроллером,
+в соответствии
+с пришедшим
+сигналом с
+панели управления.
+Схема такого
+набора ключевых
+элементов
+приведена на
+рис. 9. 
+</p><br><p>
+<img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288899_32.gif" alt="Система управления положением кресла водителя" width="323" height="310" align="BOTTOM" border="0"></p>
+<p><b>Рис.
+11 </b>Схема
+выходных ключевых
+элементов</p>
+<p>
+Приведенная
+схема представляет
+собой набор
+оптореле. 
+</p>
+<p>
+В схеме
+на рис. 8 один
+из выходных
+контактов был
+обозначен
+символом «*».
+Именно этот
+контакт подключается
+к входу схемы
+на рис. 9. Такое
+подключение
+позволит полностью
+отключить
+двигатель от
+питания в пассивном
+режиме, что
+может предостеречь,
+от различного
+рода случайностей.</p>
+<p>
+Общая схема
+Канала 1 приведена
+на рис. 10.</p><br><p><img src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/1307288900_33.gif" alt="Система управления положением кресла водителя" width="650" height="639" border="0">Рис.
+11 <b>Принципиальная
+схема Канала1</b></p><br><p>
+<b>5 экономическое
+обоснование
+проекта</b></p><br><p>Целью
+данного проекта
+является создание
+системы управляющей
+положением
+кресла водителя.
+Кресло, оснащенное
+синтезируемой
+системой, более
+удобно в использовании,
+не требует
+физических
+затрат при
+эксплуатации,
+более комфортабельно,
+что делает его
+привлекательней
+в глазах потребителя.</p>
+<p>Данная
+разработка
+обладает большим
+потенциалом
+для дальнейшего
+развития и
+усовершенствования,
+что является
+важным показателем
+с экономической
+точки зрения,
+так как новые
+технологии
+притыгивают
+потребителя,
+а в данном случае
+это возможно
+без значительных
+изменений, а,
+следовательно,
+значительных
+дополнительных
+инвестиций.
+Таким образом,
+<b>работа является
+актуальной</b>,
+потому
+					</p></div>
+					<div class="pagenav"><span>Страницы:</span> <a class="current"><b>1</b></a> <a href="http://xreferat.com/96/1934-2-sistema-upravleniya-polozheniem-kresla-voditelya.html">2</a> </div>
+				</div>
+				<div id="resultsDiv"></div>
+				</div>
+				<div class="center"><script type="text/javascript">xreferatadr();</script><div id="lx_579658"></div></div>
+				<div class="rebox" id="related">
+					<div class="relatede">
+						<div class="other">Похожие рефераты:</div>	
+							
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1991-1-sistemy-dispetcherskogo-kontrolya.html" title="Системы диспетчерского контроля">Системы диспетчерского контроля</a>
+						<div class="related_descript">Назначение и принципы построения систем диспетчерского контроля (ДК). Оперативное принятие управляющих решений. Непрерывная трехуровневая система частотного диспетчерского контроля (ЧДК) над исправностью аппаратуры перегонных и переездных устройств.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1912-1-sistemy-vpryska-topliva-sovremennyh-avtomobil-nyh-dvigateleiy.html" title="Системы впрыска топлива современных автомобильных двигателей">Системы впрыска топлива современных автомобильных двигателей</a>
+						<div class="related_descript">Назначение, устройство и принцип действия управляемых электроникой систем многоточечного (распределенного) прерывистого впрыска топлива. Достоинства систем: увеличение экономичности, снижение токсичности отработавших газов, улучшение динамики автомобиля.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1852-1-vybor-i-obosnovanie-priznakov-harakterizuyushih-sostoyanie-otdel-nyh-uzlov-i-avtomobilya-v-celom-i-datchikov-dlya-ih-kontrolya-pri-avtomatizirovannom-diagnostirovanii.html" title="Выбор и обоснование признаков, характеризующих состояние отдельных узлов и автомобиля в целом и датчиков для их контроля при автоматизированном диагностировании">Выбор и обоснование признаков, характеризующих состояние отдельных узлов и автомобиля в целом и датчиков для их контроля при автоматизированном диагностировании</a>
+						<div class="related_descript">Министерство общего и профессионального образования   Российской Федерации  Курский государственный технический университет Реферат Выбор и обоснование признаков, характеризующих состояние отдельных узлов и автомобиля в целом и датчиков для их контроля при автоматизированном диагностировании.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1769-1-besstykovye-rel-sovye-cepi.html" title="Бесстыковые рельсовые цепи">Бесстыковые рельсовые цепи</a>
+						<div class="related_descript">Сфера применения бесстыковых рельсовых цепей на линиях, где рельсовые нити пути составлены из цельносварных рельсовых плетей большой длины. Структурная схема бесстыковой рельсовой цепи. Зоны дополнительного шунтирования. Регулировка и кабельная сеть.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1679-1-mehatronnaya-sistema-obespecheniya-zadannoiy-skorosti-elektrovoza-na-razlichnyh-uchastkah-puti.html" title="Мехатронная система обеспечения заданной скорости электровоза на различных участках пути">Мехатронная система обеспечения заданной скорости электровоза на различных участках пути</a>
+						<div class="related_descript">Обзор существующих систем управления электровозом. Блок автоматического управления. Микропроцессорная система управления и диагностики. Четырехступенчатый конвейер команд, конфигурирование внешней шины, система прерываний, генерация системного такта.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1573-1-mikroprocessornye-sistemy-upravleniya-amts.html" title="Микропроцессорные системы управления АМТС">Микропроцессорные системы управления АМТС</a>
+						<div class="related_descript">Изучение необходимости и основных преимуществ применения электронной аппаратуры в системах управления агрегатами автомобиля. Особенности программируемого запоминающего устройства ППЗУ (PROM). Микропроцессорная система легкового автомобиля "Фиат-Панда 30".</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1425-1-sintez-sistemy-uglovoiy-stabilizacii-dozvukovogo-transportnogo-samoleta-po-zadannomu-kursu.html" title="Синтез системы угловой стабилизации дозвукового транспортного самолета по заданному курсу">Синтез системы угловой стабилизации дозвукового транспортного самолета по заданному курсу</a>
+						<div class="related_descript">Уравнение движения рыскания. Датчики сигналов о параметрах движения летательных аппаратов. Основные законы управления автопилотов. Рулевой привод с жесткой обратной связью. Применение корректирующего звена и построение графиков переходных процессов.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1398-1-shemy-upravleniya-strelochnymi-elektroprivodami.html" title="Схемы управления стрелочными электроприводами">Схемы управления стрелочными электроприводами</a>
+						<div class="related_descript">Преимущество семипроводной схемы управления стрелочными электроприводами по сравнению с девятипроводной. Проверка замыкания двух пар контрольных контактов автопереключателя и обесточенности трех нейтральных пусковых реле. Порядок перевода стрелки.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1311-1-diagnostirovanie-asinhronnyh-elektrodvigateleiy.html" title="Диагностирование асинхронных электродвигателей">Диагностирование асинхронных электродвигателей</a>
+						<div class="related_descript">Недостатки методов тестовой и оперативной диагностики асинхронных электродвигателей. Разработка программно-аппаратного комплекса на основе использования искусственных нейронных сетей для идентификации неисправностей в электрической части автомобиля.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1295-1-sistema-distancionnogo-upravleniya-glavnogo-dvigatelya-sulzer-6rta58.html" title="Система дистанционного управления главного двигателя Sulzer 6RTA58">Система дистанционного управления главного двигателя Sulzer 6RTA58</a>
+						<div class="related_descript">Общая характеристика систем дистанционного управления двигателем дизелем фирмы Sulzer марки 6RTA58. Технологическая последовательность управления системой: запуск, остановка, реверсирование, управление скоростью, задание программы разогрева – охлаждения.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/1006-1-mikroprocessornye-sistemy-avtoblokirovki.html" title="Микропроцессорные системы автоблокировки">Микропроцессорные системы автоблокировки</a>
+						<div class="related_descript">Микроэлектронная система автоблокировки АБ-Е1 и микропроцессорная - АБ-ЧКЕ. Конструктивно-аппаратная часть автоблокировки. Функциональная и электромагнитная совместимость с автоматической локомотивной сигнализацией АЛС-ЕН. Схема путевого приемника.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/791-1-razrabotka-avtomobil-nogo-stroboskopa.html" title="Разработка автомобильного стробоскопа">Разработка автомобильного стробоскопа</a>
+						<div class="related_descript">Сравнительный анализ стробоскопов, принцип действия, порядок работы. Особенности подготовки автомобиля к проверке, программирование режима работы тахометра. Построение принципиальных электрических схем. Анализ опасных и вредных производственных факторов.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/424-1-upravlenie-elektrosnabzheniem-potrebiteleiy-elektroenergii-na-avtomobilyah-i-traktorah.html" title="Управление электроснабжением потребителей электроэнергии на автомобилях и тракторах">Управление электроснабжением потребителей электроэнергии на автомобилях и тракторах</a>
+						<div class="related_descript">Генераторные установки - источники электрической энергии в системах электроснабжения автомобилей и тракторов. Двухпозиционные регуляторы напряжения и регуляторы напряжения дискретного действия. Принципиальная схема тиристорного регулятора напряжения.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/417-1-regulyator-napryazheniya-avtomobil-nogo-sinhronnogo-generatora-s-kogteobraznym-rotorom.html" title="Регулятор напряжения автомобильного синхронного генератора с когтеобразным ротором">Регулятор напряжения автомобильного синхронного генератора с когтеобразным ротором</a>
+						<div class="related_descript">Моделирование схемы автомобильной системы электроснабжения, в основе которой лежит синхронный генератор независимого возбуждения с когтеобразным ротором. Получение данных для выбора элементной базы и наглядные осциллограммы в разных режимах работы.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/390-1-avtomobil-nye-sistemy-zazhiganiya.html" title="Автомобильные системы зажигания">Автомобильные системы зажигания</a>
+						<div class="related_descript">Отличия автомобильных электронных и микропроцессорных систем зажигания. Бесконтактные системы зажигания с нерегулируемым временем накопления энергии. Функционирование системы при различных режимах работы двигателя. Электрическая схема системы впрыска.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/293-1-ekspluataciya-sudovyh-energeticheskih-ustanovok.html" title="Эксплуатация судовых энергетических установок">Эксплуатация судовых энергетических установок</a>
+						<div class="related_descript">Роль автоматизации судовых дизельных и газотурбинных установок в повышении производительности труда и безопасности мореплавания. Алгоритм функционирования автоматической системы и особенности полупроводников. Элементы и схемы контроля параметров.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/219-1-dispetcherskaya-centralizaciya-sistemy-neva.html" title="Диспетчерская централизация системы &quot;НЕВА&quot;">Диспетчерская централизация системы "НЕВА"</a>
+						<div class="related_descript">Диспетчерская централизация – это комплекс устройств железнодорожной автоматики и телемеханики. Преимущества системы, структурная схема, строение сигналов ТУ и ТС и назначение каждого элемента кода соответственно с заданием. Принципы синхронизации.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/125-1-osnovy-tehnicheskoiy-diagnostiki-avtomobileiy.html" title="Основы технической диагностики автомобилей">Основы технической диагностики автомобилей</a>
+						<div class="related_descript">Диагностирование цилиндро-поршневой группы и газораспределительного механизма двигателя внутреннего сгорания, электрооборудования, микропроцессорных систем управления. Основные функции программы диагностики, функции кнопок меню информации по ремонту.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/56-1-ustroiystvo-i-princip-raboty-apparatury-ponab-3.html" title="Устройство и принцип работы аппаратуры ПОНАБ-3">Устройство и принцип работы аппаратуры ПОНАБ-3</a>
+						<div class="related_descript">Структурная схема, общий принцип и временная диаграмма работы, проверка и регулировка узлов и блоков аппаратуры ПОНАБ-3. Временная диаграмма работы устройства отметки прохода физических подвижных единиц аппаратуры ПОНАБ-3 с учетом неисправности.</div>
+						<div class="clr"></div>
+						</div>	
+						<div class="related_block">
+						<a href="http://xreferat.com/96/21-1-struktura-i-princip-deiystviya-ustroiystva-kontrolya-peregona-metodom-scheta-oseiy.html" title="Структура и принцип действия устройства контроля перегона методом счета осей">Структура и принцип действия устройства контроля перегона методом счета осей</a>
+						<div class="related_descript">Принцип работы системы контроля состояния перегона на основании счетчика осей подвижного состава, ее основные элементы и отличительные особенности. Назначение и методика контроля проследования поездов при полуавтоматической блокировке типа ПБМ-56.</div>
+						<div class="clr"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar" id="sideLeft">
+			<div class="left">
+			<script type="text/javascript">xreferatax();</script><div id="lx_579940"></div>
+			</div>
+			<div class="box">
+				<h3>Категории</h3>
+				<div class="inbox" style="overflow: hidden;">
+					<div class="list" style="display: block;">
+						<ul>
+							<li><a href="http://xreferat.com/1/" title="Авиация и космонавтика">Авиация и космонавтика <span>(327)</span></a></li>
+							<li><a href="http://xreferat.com/2/" title="Административное право">Административное право <span>(149)</span></a></li>
+							<li><a href="http://xreferat.com/3/" title="Арбитражный процесс">Арбитражный процесс <span>(29)</span></a></li>
+							<li><a href="http://xreferat.com/4/" title="Архитектура">Архитектура <span>(130)</span></a></li>
+							<li><a href="http://xreferat.com/5/" title="Астрология">Астрология <span>(4)</span></a></li>
+							<li><a href="http://xreferat.com/6/" title="Астрономия">Астрономия <span>(186)</span></a></li>
+							<li><a href="http://xreferat.com/7/" title="Банковское дело">Банковское дело <span>(2917)</span></a></li>
+							<li><a href="http://xreferat.com/8/" title="Безопасность жизнедеятельности">Безопасность жизнедеятельности <span>(1880)</span></a></li>
+							<li><a href="http://xreferat.com/9/" title="Биографии">Биографии <span>(3553)</span></a></li>
+							<li><a href="http://xreferat.com/10/" title="Биология">Биология <span>(3097)</span></a></li>
+							<li><a href="http://xreferat.com/11/" title="Биология и химия">Биология и химия <span>(1111)</span></a></li>
+							<li><a href="http://xreferat.com/12/" title="Биржевое дело">Биржевое дело <span>(79)</span></a></li>
+							<li><a href="http://xreferat.com/13/" title="Ботаника и сельское хоз-во">Ботаника и сельское хоз-во <span>(2362)</span></a></li>
+							<li><a href="http://xreferat.com/14/" title="Бухгалтерский учет и аудит">Бухгалтерский учет и аудит <span>(4899)</span></a></li>
+							<li><a href="http://xreferat.com/15/" title="Валютные отношения">Валютные отношения <span>(70)</span></a></li>
+							<li><a href="http://xreferat.com/16/" title="Ветеринария">Ветеринария <span>(56)</span></a></li>
+							<li><a href="http://xreferat.com/17/" title="Военная кафедра">Военная кафедра <span>(636)</span></a></li>
+							<li><a href="http://xreferat.com/18/" title="География">География <span>(3743)</span></a></li>
+							<li><a href="http://xreferat.com/19/" title="Геодезия">Геодезия <span>(60)</span></a></li>
+							<li><a href="http://xreferat.com/20/" title="Геология">Геология <span>(1084)</span></a></li>
+							<li><a href="http://xreferat.com/21/" title="Геополитика">Геополитика <span>(49)</span></a></li>
+							<li><a href="http://xreferat.com/22/" title="Государство и право">Государство и право <span>(13144)</span></a></li>
+							<li><a href="http://xreferat.com/23/" title="Гражданское право и процесс">Гражданское право и процесс <span>(543)</span></a></li>
+							<li><a href="http://xreferat.com/24/" title="Делопроизводство">Делопроизводство <span>(32)</span></a></li>
+							<li><a href="http://xreferat.com/25/" title="Деньги и кредит">Деньги и кредит <span>(116)</span></a></li>
+							<li><a href="http://xreferat.com/26/" title="Естествознание">Естествознание <span>(137)</span></a></li>
+							<li><a href="http://xreferat.com/27/" title="Журналистика">Журналистика <span>(637)</span></a></li>
+							<li><a href="http://xreferat.com/28/" title="Зоология">Зоология <span>(40)</span></a></li>
+							<li><a href="http://xreferat.com/29/" title="Издательское дело и полиграфия">Издательское дело и полиграфия <span>(271)</span></a></li>
+							<li><a href="http://xreferat.com/30/" title="Инвестиции">Инвестиции <span>(120)</span></a></li>
+							<li><a href="http://xreferat.com/31/" title="Иностранный язык">Иностранный язык <span>(4422)</span></a></li>
+							<li><a href="http://xreferat.com/32/" title="Информатика">Информатика <span>(74)</span></a></li>
+							<li><a href="http://xreferat.com/33/" title="Информатика, программирование">Информатика, программирование <span>(7324)</span></a></li>
+							<li><a href="http://xreferat.com/34/" title="Исторические личности">Исторические личности <span>(436)</span></a></li>
+							<li><a href="http://xreferat.com/35/" title="История">История <span>(10671)</span></a></li>
+							<li><a href="http://xreferat.com/36/" title="История техники">История техники <span>(672)</span></a></li>
+							<li><a href="http://xreferat.com/37/" title="Кибернетика">Кибернетика <span>(83)</span></a></li>
+							<li><a href="http://xreferat.com/38/" title="Коммуникации и связь">Коммуникации и связь <span>(2320)</span></a></li>
+							<li><a href="http://xreferat.com/39/" title="Компьютерные науки">Компьютерные науки <span>(75)</span></a></li>
+							<li><a href="http://xreferat.com/40/" title="Косметология">Косметология <span>(20)</span></a></li>
+							<li><a href="http://xreferat.com/41/" title="Краеведение и этнография">Краеведение и этнография <span>(528)</span></a></li>
+							<li><a href="http://xreferat.com/42/" title="Краткое содержание произведений">Краткое содержание произведений <span>(963)</span></a></li>
+							<li><a href="http://xreferat.com/43/" title="Криминалистика">Криминалистика <span>(136)</span></a></li>
+							<li><a href="http://xreferat.com/44/" title="Криминология">Криминология <span>(53)</span></a></li>
+							<li><a href="http://xreferat.com/45/" title="Криптология">Криптология <span>(5)</span></a></li>
+							<li><a href="http://xreferat.com/46/" title="Кулинария">Кулинария <span>(955)</span></a></li>
+							<li><a href="http://xreferat.com/47/" title="Культура и искусство">Культура и искусство <span>(5433)</span></a></li>
+							<li><a href="http://xreferat.com/48/" title="Культурология">Культурология <span>(586)</span></a></li>
+							<li><a href="http://xreferat.com/49/" title="Литература: зарубежная">Литература : зарубежная <span>(2101)</span></a></li>
+							<li><a href="http://xreferat.com/50/" title="Литература и русский язык">Литература и русский язык <span>(5460)</span></a></li>
+							<li><a href="http://xreferat.com/51/" title="Логика">Логика <span>(69)</span></a></li>
+							<li><a href="http://xreferat.com/52/" title="Логистика">Логистика <span>(29)</span></a></li>
+							<li><a href="http://xreferat.com/53/" title="Маркетинг">Маркетинг <span>(4459)</span></a></li>
+							<li><a href="http://xreferat.com/54/" title="Математика">Математика <span>(2533)</span></a></li>
+							<li><a href="http://xreferat.com/55/" title="Медицина, здоровье">Медицина, здоровье <span>(9201)</span></a></li>
+							<li><a href="http://xreferat.com/56/" title="Медицинские науки">Медицинские науки <span>(100)</span></a></li>
+							<li><a href="http://xreferat.com/57/" title="Международное публичное право">Международное публичное право <span>(78)</span></a></li>
+							<li><a href="http://xreferat.com/58/" title="Международное частное право">Международное частное право <span>(38)</span></a></li>
+							<li><a href="http://xreferat.com/59/" title="Международные отношения">Международные отношения <span>(2158)</span></a></li>
+							<li><a href="http://xreferat.com/60/" title="Менеджмент">Менеджмент <span>(8171)</span></a></li>
+							<li><a href="http://xreferat.com/61/" title="Металлургия">Металлургия <span>(106)</span></a></li>
+							<li><a href="http://xreferat.com/62/" title="Москвоведение">Москвоведение <span>(621)</span></a></li>
+							<li><a href="http://xreferat.com/63/" title="Музыка">Музыка <span>(1169)</span></a></li>
+							<li><a href="http://xreferat.com/64/" title="Муниципальное право">Муниципальное право <span>(46)</span></a></li>
+							<li><a href="http://xreferat.com/65/" title="Налоги, налогообложение">Налоги, налогообложение <span>(269)</span></a></li>
+							<li><a href="http://xreferat.com/66/" title="Наука и техника">Наука и техника <span>(1823)</span></a></li>
+							<li><a href="http://xreferat.com/67/" title="Начертательная геометрия">Начертательная геометрия <span>(4)</span></a></li>
+							<li><a href="http://xreferat.com/68/" title="Новейшая история, политология">Новейшая история, политология <span>(83)</span></a></li>
+							<li><a href="http://xreferat.com/69/" title="Оккультизм и уфология">Оккультизм и уфология <span>(9)</span></a></li>
+							<li><a href="http://xreferat.com/70/" title="Остальные рефераты">Остальные рефераты <span>(1506)</span></a></li>
+							<li><a href="http://xreferat.com/71/" title="Педагогика">Педагогика <span>(6624)</span></a></li>
+							<li><a href="http://xreferat.com/72/" title="Политология">Политология <span>(2380)</span></a></li>
+							<li><a href="http://xreferat.com/73/" title="Право">Право <span>(2218)</span></a></li>
+							<li><a href="http://xreferat.com/74/" title="Право, юриспруденция">Право, юриспруденция <span>(773)</span></a></li>
+							<li><a href="http://xreferat.com/75/" title="Предпринимательство">Предпринимательство <span>(600)</span></a></li>
+							<li><a href="http://xreferat.com/76/" title="Промышленность, производство">Промышленность, производство <span>(4354)</span></a></li>
+							<li><a href="http://xreferat.com/77/" title="Психология">Психология <span>(7469)</span></a></li>
+							<li><a href="http://xreferat.com/78/" title="Психология, педагогика">Психология, педагогика <span>(1936)</span></a></li>
+							<li><a href="http://xreferat.com/79/" title="Радиоэлектроника">Радиоэлектроника <span>(579)</span></a></li>
+							<li><a href="http://xreferat.com/80/" title="Реклама">Реклама <span>(902)</span></a></li>
+							<li><a href="http://xreferat.com/81/" title="Религия и мифология">Религия и мифология <span>(2580)</span></a></li>
+							<li><a href="http://xreferat.com/82/" title="Риторика">Риторика <span>(27)</span></a></li>
+							<li><a href="http://xreferat.com/83/" title="Сексология">Сексология <span>(710)</span></a></li>
+							<li><a href="http://xreferat.com/84/" title="Социология">Социология <span>(3825)</span></a></li>
+							<li><a href="http://xreferat.com/85/" title="Статистика">Статистика <span>(94)</span></a></li>
+							<li><a href="http://xreferat.com/86/" title="Страхование">Страхование <span>(127)</span></a></li>
+							<li><a href="http://xreferat.com/87/" title="Строительные науки">Строительные науки <span>(11)</span></a></li>
+							<li><a href="http://xreferat.com/88/" title="Строительство">Строительство <span>(1300)</span></a></li>
+							<li><a href="http://xreferat.com/89/" title="Схемотехника">Схемотехника <span>(16)</span></a></li>
+							<li><a href="http://xreferat.com/90/" title="Таможенная система">Таможенная система <span>(425)</span></a></li>
+							<li><a href="http://xreferat.com/91/" title="Теория государства и права">Теория государства и права <span>(260)</span></a></li>
+							<li><a href="http://xreferat.com/92/" title="Теория организации">Теория организации <span>(47)</span></a></li>
+							<li><a href="http://xreferat.com/93/" title="Теплотехника">Теплотехника <span>(31)</span></a></li>
+							<li><a href="http://xreferat.com/94/" title="Технология">Технология <span>(752)</span></a></li>
+							<li><a href="http://xreferat.com/95/" title="Товароведение">Товароведение <span>(21)</span></a></li>
+							<li><a href="http://xreferat.com/96/" title="Транспорт">Транспорт <span>(2083)</span></a></li>
+							<li><a href="http://xreferat.com/97/" title="Трудовое право">Трудовое право <span>(159)</span></a></li>
+							<li><a href="http://xreferat.com/98/" title="Туризм">Туризм <span>(115)</span></a></li>
+							<li><a href="http://xreferat.com/99/" title="Уголовное право и процесс">Уголовное право и процесс <span>(481)</span></a></li>
+							<li><a href="http://xreferat.com/100/" title="Управление">Управление <span>(111)</span></a></li>
+							<li><a href="http://xreferat.com/101/" title="Управленческие науки">Управленческие науки <span>(35)</span></a></li>
+							<li><a href="http://xreferat.com/102/" title="Физика">Физика <span>(2716)</span></a></li>
+							<li><a href="http://xreferat.com/103/" title="Физкультура и спорт">Физкультура и спорт <span>(3181)</span></a></li>
+							<li><a href="http://xreferat.com/104/" title="Философия">Философия <span>(5149)</span></a></li>
+							<li><a href="http://xreferat.com/105/" title="Финансовые науки">Финансовые науки <span>(5052)</span></a></li>
+							<li><a href="http://xreferat.com/106/" title="Финансы">Финансы <span>(486)</span></a></li>
+							<li><a href="http://xreferat.com/107/" title="Фотография">Фотография <span>(4)</span></a></li>
+							<li><a href="http://xreferat.com/108/" title="Химия">Химия <span>(1792)</span></a></li>
+							<li><a href="http://xreferat.com/109/" title="Хозяйственное право">Хозяйственное право <span>(26)</span></a></li>
+							<li><a href="http://xreferat.com/110/" title="Цифровые устройства">Цифровые устройства <span>(35)</span></a></li>
+							<li><a href="http://xreferat.com/111/" title="Экологическое право">Экологическое право <span>(40)</span></a></li>
+							<li><a href="http://xreferat.com/112/" title="Экология">Экология <span>(3536)</span></a></li>
+							<li><a href="http://xreferat.com/113/" title="Экономика">Экономика <span>(13917)</span></a></li>
+							<li><a href="http://xreferat.com/114/" title="Экономико-математическое моделирование">Экономико-математическое моделирование <span>(780)</span></a></li>
+							<li><a href="http://xreferat.com/115/" title="Экономическая география">Экономическая география <span>(141)</span></a></li>
+							<li><a href="http://xreferat.com/116/" title="Экономическая теория">Экономическая теория <span>(976)</span></a></li>
+							<li><a href="http://xreferat.com/117/" title="Этика">Этика <span>(612)</span></a></li>
+							<li><a href="http://xreferat.com/118/" title="Юриспруденция">Юриспруденция <span>(689)</span></a></li>
+							<li><a href="http://xreferat.com/119/" title="Языковедение">Языковедение <span>(171)</span></a></li>
+							<li><a href="http://xreferat.com/120/" title="Языкознание, филология">Языкознание, филология <span>(672)</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="left">
+			<script type="text/javascript">xreferats();</script><script type="text/javascript" src="./Реферат_ Система управления положением кресла водителя - Xreferat.com - Банк рефератов, сочинений, докладов, курсовых и дипломных работ_files/share.js.Без названия" charset="windows-1251"></script><div class="yashare-auto-init" data-yasharel10n="ru" data-yasharetype="button" data-yasharequickservices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir"><span class="b-share"><a class="b-share__handle" id="ya-share-0.4866943907683141-1477938319091" data-hdirection="" data-vdirection=""><span class="b-share-form-button b-share-form-button_share"><i class="b-share-form-button__before"></i><i class="b-share-form-button__icon"></i>Поделиться…<i class="b-share-form-button__after"></i></span></a><a rel="nofollow" target="_blank" title="Я.ру" class="b-share__handle b-share__link" href="http://share.yandex.ru/go.xml?service=yaru&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" data-service="yaru"><span class="b-share-icon b-share-icon_yaru"></span></a><a rel="nofollow" target="_blank" title="ВКонтакте" class="b-share__handle b-share__link" href="http://share.yandex.ru/go.xml?service=vkontakte&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" data-service="vkontakte"><span class="b-share-icon b-share-icon_vkontakte"></span></a><a rel="nofollow" target="_blank" title="Facebook" class="b-share__handle b-share__link" href="http://share.yandex.ru/go.xml?service=facebook&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" data-service="facebook"><span class="b-share-icon b-share-icon_facebook"></span></a><a rel="nofollow" target="_blank" title="Twitter" class="b-share__handle b-share__link" href="http://share.yandex.ru/go.xml?service=twitter&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" data-service="twitter"><span class="b-share-icon b-share-icon_twitter"></span></a><a rel="nofollow" target="_blank" title="Одноклассники" class="b-share__handle b-share__link" href="http://share.yandex.ru/go.xml?service=odnoklassniki&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" data-service="odnoklassniki"><span class="b-share-icon b-share-icon_odnoklassniki"></span></a><a rel="nofollow" target="_blank" title="Мой Мир" class="b-share__handle b-share__link" href="http://share.yandex.ru/go.xml?service=moimir&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" data-service="moimir"><span class="b-share-icon b-share-icon_moimir"></span></a></span></div>
+			</div>
+			<div class="left">
+			<script type="text/javascript">xreferataq();</script><div id="lx_575493"></div>
+			</div>
+			<div class="left">
+			<script type="text/javascript">xreferatat();</script><div id="cavU3ssnA055V2QSgF8TzT"></div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="flinks">
+			<ul>
+				<li>© 2016 Xreferat</li>
+				<li><a href="http://xreferat.com/support.html">Обратная связь</a></li>
+				<li><a href="http://xreferat.com/advertising.html">Реклама</a></li>
+				<li><a href="http://xreferat.com/upload.html">Добавить работу</a></li>
+			</ul>
+		</div>
+		<div class="mouse"></div>
+	</div>
+</div>
+<script language="Javascript">
+var bid = 'vU3ssnA055V2QSgF8TzT';
+var sid = '6507';
+var async = 1;
+</script>
+<script type="text/javascript">xreferatac();</script><script type="text/javascript" src="http://v.actionteaser.ru/news.js"></script>
+
+
+<!-- Xreferat (http://xreferat.com) -->
+<div class="b-share-popup-wrap b-share-popup-wrap_state_hidden" id="ya-share-0.4866943907683141-1477938319091-popup"><div class="b-share-popup b-share-popup_down b-share-popup_to-right"><div class="b-share-popup__i"><div class="b-share-popup__main  b-share-popup_yandexed"><div class="b-share-popup__header b-share-popup__header_first">Поделитесь с друзьями</div><a rel="nofollow" target="_blank" href="http://share.yandex.ru/go.xml?service=yaru&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" class="b-share-popup__item" data-service="yaru"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_yaru"></span></span><span class="b-share-popup__item__text">Я.ру</span></a><a rel="nofollow" target="_blank" href="http://share.yandex.ru/go.xml?service=vkontakte&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" class="b-share-popup__item" data-service="vkontakte"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_vkontakte"></span></span><span class="b-share-popup__item__text">ВКонтакте</span></a><a rel="nofollow" target="_blank" href="http://share.yandex.ru/go.xml?service=odnoklassniki&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" class="b-share-popup__item" data-service="odnoklassniki"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_odnoklassniki"></span></span><span class="b-share-popup__item__text">Одноклассники</span></a><a rel="nofollow" target="_blank" href="http://share.yandex.ru/go.xml?service=twitter&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" class="b-share-popup__item" data-service="twitter"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_twitter"></span></span><span class="b-share-popup__item__text">Twitter</span></a><a rel="nofollow" target="_blank" href="http://share.yandex.ru/go.xml?service=facebook&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" class="b-share-popup__item" data-service="facebook"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_facebook"></span></span><span class="b-share-popup__item__text">Facebook</span></a><a rel="nofollow" target="_blank" href="http://share.yandex.ru/go.xml?service=moimir&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" class="b-share-popup__item" data-service="moimir"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_moimir"></span></span><span class="b-share-popup__item__text">Мой Мир</span></a><a rel="nofollow" target="_blank" href="http://share.yandex.ru/go.xml?service=lj&amp;url=http%3A%2F%2Fxreferat.com%2F96%2F1934-1-sistema-upravleniya-polozheniem-kresla-voditelya.html&amp;title=%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%3A%20%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%D1%80%D0%B5%D1%81%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20-%20Xreferat.com%20-%20%D0%91%D0%B0%D0%BD%D0%BA%20%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9%2C%20%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2%2C%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%8B%D1%85%20%D0%B8%20%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D1%85%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82" class="b-share-popup__item" data-service="lj"><span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_lj"></span></span><span class="b-share-popup__item__text">LiveJournal</span></a><a href="http://xreferat.com/" class="b-share-popup__yandex">Xreferat</a></div></div><div class="b-share-popup__tail"></div></div></div><div id="i-l-app"><div id="i-l-app-mouse-text" style="display: none"></div><div id="i-l-app-color-picker"><div class="colors"><div class="color-0" data-color="0"></div><div class="color-1" data-color="1"></div><div class="color-2" data-color="2"></div><div class="color-3" data-color="3"></div><div class="color-4" data-color="4"></div><div class="color-5" data-color="5"></div><div class="color-6" data-color="6"></div><div class="color-7" data-color="7"></div></div><div id="_l_i-color-active" class="color-3"></div></div><div id="i-l-app-h-rule" data-type="h"></div><div id="i-l-app-v-rule" data-type="v"></div><div id="i-l-app-lines" class="color-3"></div></div></body></html>

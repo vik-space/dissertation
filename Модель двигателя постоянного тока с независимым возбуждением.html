@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0095)http://life-prog.ru/2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<title>Модель двигателя постоянного тока с независимым возбуждением</title>
+<link href="./Модель двигателя постоянного тока с независимым возбуждением_files/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="http://life-prog.ru/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://life-prog.ru/favicon.ico" type="image/x-icon">
+<style type="text/css" id="ya_share_style">.b-share-form-button{font:86%/17px Verdana,Arial,sans-serif;display:-moz-inline-box;display:inline-block;position:relative;height:19px;margin:0 3px;padding:0 4px;cursor:default;white-space:nowrap;text-decoration:none!important;color:#000!important;border:none;outline:none;background:url("//yastatic.net/share/static/b-share-form-button.png") 0 -20px repeat-x}.b-share-form-button:link:hover,.b-share-form-button:visited:hover{color:#000!important}.b-share-form-button__before,.b-share-form-button__after{position:absolute;width:3px;height:19px;background:url("//yastatic.net/share/static/b-share-form-button.png")}.b-share-form-button__before{margin-left:-7px}.b-share-form-button__after{margin-left:4px;background-position:-3px 0}.b-share-form-button::-moz-focus-inner{border:none}button.b-share-form-button .b-share-form-button__before,button.b-share-form-button .b-share-form-button__after{margin-top:-1px}@-moz-document url-prefix(){button.b-share-form-button .b-share-form-button__after{margin-top:-2px;margin-left:6px}button.b-share-form-button .b-share-form-button__before{margin-top:-2px;margin-left:-9px}}SPAN.b-share-form-button:hover,.b-share-form-button_state_hover{background-position:0 -60px}SPAN.b-share-form-button:hover .b-share-form-button__before,.b-share-form-button_state_hover .b-share-form-button__before{background-position:0 -40px}SPAN.b-share-form-button:hover .b-share-form-button__after,.b-share-form-button_state_hover .b-share-form-button__after{background-position:-3px -40px}.b-share-form-button_state_pressed,.b-share-form-button_state_pressed .b-share-form-button_share{background-position:0 -100px!important}.b-share-form-button_state_pressed .b-share-form-button__before{background-position:0 -80px!important}.b-share-form-button_state_pressed .b-share-form-button__after{background-position:-3px -80px!important}button.b-share-form-button_state_pressed{overflow:visible}.b-share-form-button_icons{position:relative;padding:0;background-position:0 -20px!important}.b-share-form-button_icons .b-share-form-button__before{left:0;margin-left:-3px;background-position:0 0!important}.b-share-form-button_icons .b-share-form-button__after{z-index:-1;margin-left:0;background-position:-3px 0!important}.b-share-form-button_icons .b-share__handle{padding:2px!important}.b-share-form-button_icons .b-share__handle_more{position:relative;padding-right:6px!important;margin-right:-4px}.b-share-form-button_icons .b-share-icon{opacity:.5;background-image:url("//yastatic.net/share/static/b-share-icon_size_14.png")}.b-share-form-button_icons A.b-share__handle:hover .b-share-icon{opacity:1}.b-share{font:86%/1.4545em Arial,sans-serif;display:-moz-inline-box;display:inline-block;padding:1px 3px 1px 4px!important;vertical-align:middle}.b-share .b-share-form-button{font-size:1em}.b-share__text .b-share-icon{margin:0 5px 0 0;border:none}.b-share__text{margin-right:5px}.b-share__handle{float:left;height:16px;padding:5px 3px 5px 2px!important;cursor:pointer;text-align:left;text-decoration:none!important}.b-share__handle_cursor_default{cursor:default}.b-share__handle .b-share-form-button{margin-top:-2px}.b-share__hr{display:none;float:left;width:1px;height:26px;margin:0 3px 0 2px}a.b-share__handle:hover .b-share__text{text-decoration:underline;color:red}.b-share_bordered{padding:0 2px 0 3px!important;border:1px solid #E4E4E4;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.b-share_bordered .b-share__hr{display:inline;background:#E4E4E4}.b-share_link{margin:-8px 0}a.b-share_link{margin:0}.b-share_link .b-share__text{text-decoration:underline;color:#1A3DC1}.b-share-form-button_share{padding-left:26px!important;vertical-align:top}.b-share-form-button_share .b-share-form-button__before{margin-left:-29px}.b-share-form-button_share .b-share-form-button__icon{position:absolute;width:20px;height:17px;margin:1px 0 0 -23px;background:url("//yastatic.net/share/static/b-share-form-button_share__icon.png") 0 0 no-repeat}.b-share-pseudo-link{border-bottom:1px dotted;cursor:pointer;text-decoration:none!important}.b-share_font_fixed{font-size:11px}.b-share__handle_more{font-size:9px;margin-top:-1px;color:#7B7B7B}A.b-share__handle_more:hover{color:#000}.b-share__group{float:left}.b-share-icon{float:left;display:inline;overflow:hidden;width:16px;height:16px;padding:0!important;vertical-align:top;border:0;background:url("//yastatic.net/share/static/b-share-icon.png") 0 99px no-repeat}.b-share-icon_vkontakte,.b-share-icon_custom{background-position:0 0}.b-share-icon_yaru,.b-share-icon_yaru_photo,.b-share-icon_yaru_wishlist{background-position:0 -17px}.b-share-icon_lj{background-position:0 -34px}.b-share-icon_twitter{background-position:0 -51px}.b-share-icon_facebook{background-position:0 -68px}.b-share-icon_moimir{background-position:0 -85px}.b-share-icon_friendfeed{background-position:0 -102px}.b-share-icon_mail{background-position:0 -119px}.b-share-icon_html{background-position:0 -136px}.b-share-icon_postcard{background-position:0 -153px}.b-share-icon_odnoklassniki{background-position:0 -170px}.b-share-icon_blogger{background-position:0 -187px}.b-share-icon_delicious{background-position:0 -221px}.b-share-icon_gbuzz{background-position:0 -238px}.b-share-icon_linkedin{background-position:0 -255px}.b-share-icon_myspace{background-position:0 -272px}.b-share-icon_evernote{background-position:0 -289px}.b-share-icon_digg{background-position:0 -306px}.b-share-icon_juick{background-position:0 -324px}.b-share-icon_moikrug{background-position:0 -341px}.b-share-icon_yazakladki{background-position:0 -358px}.b-share-icon_liveinternet{background-position:0 -375px}.b-share-icon_tutby{background-position:0 -392px}.b-share-icon_diary{background-position:0 -409px}.b-share-icon_gplus{background-position:0 -426px}.b-share-icon_pocket{background-position:0 -443px}.b-share-icon_surfingbird{background-position:0 -460px}.b-share-icon_pinterest{background-position:0 -477px}.b-share-icon_renren{background-position:0 0}.b-share-icon_renren,.b-share-icon_sina_weibo{background:url("//yastatic.net/share/static/b-share-icon__china.png") no-repeat}.b-share-icon_sina_weibo{background-position:-18px 0}.b-share-icon_qzone{background-position:-36px 0}.b-share-icon_qzone,.b-share-icon_tencent_weibo{background:url("//yastatic.net/share/static/b-share-icon__china.png") no-repeat}.b-share-icon_tencent_weibo{background-position:-54px 0}.b-share_theme_counter .b-share{display:inline-block;vertical-align:middle;white-space:nowrap}.b-share-counter{font:14px Arial,sans-serif;line-height:18px;display:none;float:left;margin:3px 6px 3px 3px;color:#fff}.b-share_theme_counter .b-share_type_small .b-share-counter{font-size:11px;line-height:14px;margin:2px 6px 2px 1px}.b-share_theme_counter .b-share-btn__counter .b-share-counter{display:block}.b-share-btn__counter{text-decoration:none}.b-share_theme_counter .b-share-btn__wrap{position:relative;float:left;margin-left:5px}.b-share_theme_counter .b-share_type_small .b-share-btn__wrap{margin-left:4px}.b-share_theme_counter .b-share-btn__wrap:first-child{margin-left:0}.b-share_theme_counter .b-share__link{display:inline-block;cursor:pointer;-webkit-border-radius:3px;border-radius:3px}.b-share_theme_counter .b-share_type_small .b-share__link{-webkit-border-radius:2px;border-radius:2px}.b-share_theme_counter .b-share-icon{display:block;float:left;width:24px;height:24px;background-image:url("//yastatic.net/share/static/b-share_counter_large.png");background-position:-20px 0}.b-share_theme_counter .b-share_type_small .b-share-icon{width:18px;height:18px;background-image:url("//yastatic.net/share/static/b-share_counter_small.png")}.b-share_theme_counter .b-share-icon_facebook{background-position:0 0}.b-share_theme_counter .b-share-btn__facebook{background-color:#3c5a98}.b-share_theme_counter .b-share-btn__facebook:hover{background-color:#30487a}.b-share_theme_counter .b-share-btn__facebook:active{border-top:2px solid #24365a;background-color:#334d81}.b-share_theme_counter .b-share-icon_moimir{background-position:0 -29px}.b-share_theme_counter .b-share-btn__moimir{background-color:#226eb7}.b-share_theme_counter .b-share-btn__moimir:hover{background-color:#1b5892}.b-share_theme_counter .b-share-btn__moimir:active{border-top:2px solid #14426d;background-color:#1d5e9c}.b-share_theme_counter .b-share-icon_vkontakte{background-position:0 -58px}.b-share_theme_counter .b-share-btn__vkontakte{background-color:#48729e}.b-share_theme_counter .b-share-btn__vkontakte:hover{background-color:#3a5b7e}.b-share_theme_counter .b-share-btn__vkontakte:active{border-top:2px solid #2b445e;background-color:#3d6186}.b-share_theme_counter .b-share-icon_twitter{background-position:0 -87px}.b-share_theme_counter .b-share-btn__twitter{background-color:#00aced}.b-share_theme_counter .b-share-btn__twitter:hover{background-color:#008abe}.b-share_theme_counter .b-share-btn__twitter:active{border-top:2px solid #00668d;background-color:#0092ca}.b-share_theme_counter .b-share-icon_odnoklassniki{background-position:0 -116px}.b-share_theme_counter .b-share-btn__odnoklassniki{background-color:#ff9f4d}.b-share_theme_counter .b-share-btn__odnoklassniki:hover{background-color:#cc7f3e}.b-share_theme_counter .b-share-btn__odnoklassniki:active{border-top:2px solid #975e2e;background-color:#d98742}.b-share_theme_counter .b-share-icon_gplus{background-position:0 -145px}.b-share_theme_counter .b-share-btn__gplus{background-color:#c25234}.b-share_theme_counter .b-share-btn__gplus:hover{background-color:#9b422a}.b-share_theme_counter .b-share-btn__gplus:active{border-top:2px solid #73311f;background-color:#a5462c}.b-share_theme_counter .b-share-icon_yaru{background-position:0 -174px}.b-share_theme_counter .b-share-btn__yaru{background-color:#d83933}.b-share_theme_counter .b-share-btn__yaru:hover{background-color:#ad2e29}.b-share_theme_counter .b-share-btn__yaru:active{border-top:2px solid #80221e;background-color:#b8312b}.b-share_theme_counter .b-share-icon_pinterest{background-position:0 -203px}.b-share_theme_counter .b-share-btn__pinterest{background-color:#cd1e27}.b-share_theme_counter .b-share-btn__pinterest:hover{background-color:#a4181f}.b-share_theme_counter .b-share-btn__pinterest:active{border-top:2px solid #7b1217;background-color:#ae1921}.b-share_theme_counter .b-share__link:active{height:22px}.b-share_theme_counter .b-share_type_small .b-share__link:active{height:16px}.b-share_theme_counter .b-share__link:active .b-share-icon,.b-share_theme_counter .b-share__link:active .b-share-counter{position:relative;top:-1px}.b-share_theme_counter .b-share__link::after{position:absolute;top:0;right:0;bottom:0;left:0;content:"";background-image:url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}.b-share_theme_counter .b-share__handle{height:auto;padding:0!important}</style><script async="" src="./Модель двигателя постоянного тока с независимым возбуждением_files/async-ads.js.Без названия"></script><script src="./Модель двигателя постоянного тока с независимым возбуждением_files/jsapi" type="text/javascript"></script><link type="text/css" href="./Модель двигателя постоянного тока с независимым возбуждением_files/default+ru.css" rel="stylesheet"><link type="text/css" href="./Модель двигателя постоянного тока с независимым возбуждением_files/default.css" rel="stylesheet"><script type="text/javascript" src="./Модель двигателя постоянного тока с независимым возбуждением_files/default+ru.I.js.Без названия"></script><style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+border-color: #D9D9D9;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+border-color: #666666;
+background-color: #CECECE;
+background-image: none;
+filter: none;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #E9E9E9;
+background-color: #E9E9E9;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-color: #FF9900;
+border-bottom-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-tabsArea {
+border-color: #FF9900;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #0000CC;
+}
+.gsc-cursor-page {
+color: #0000CC;
+}
+a.gsc-trailing-more-results:link {
+color: #0000CC;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #000000;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #008000;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #008000;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #E9E9E9;
+background-color: #FFFFFF;
+color: #0000CC;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #FF9900;
+background-color: #FFFFFF;
+color: #0000CC;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #336699;
+background-color: #FFFFFF;
+}
+.gsc-completion-title {
+color: #0000CC;
+}
+.gsc-completion-snippet {
+color: #000000;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #0000CC;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #000000;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #008000;
+}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+
+<body>
+
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="main_border">
+  <tbody><tr>
+    <td valign="top" bgcolor="#CCE5F2"><table width="100%" border="0">
+  <tbody><tr>
+    <td>
+<table width="100%" border="0">
+  <tbody><tr>
+    <td><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/header3.jpg" width="255" height="100"></td>
+    
+<td>
+
+
+<noindex>
+<center>
+
+<a href="http://wikikak.org/" target="_blank" rel="nofollow"><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/wikikak.jpg" width="729" height="100"></a>
+
+</center>
+</noindex>
+</td>
+  </tr>
+</tbody></table>
+
+
+
+</td>
+    
+  </tr>
+</tbody></table></td>
+  </tr>
+  <tr>
+    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr><td width="182" class="left" valign="top">
+<hr class="line">
+<center>
+
+<a href="http://life-prog.ru/">русс</a> | <a href="http://life-prog.ru/ukr/">укр</a> <br><br>
+</center>
+
+<div class="nav_title">Программирование:</div>
+ 
+<p><a class="nav_link4" href="http://life-prog.ru/">Языки программирования</a>
+</p><p>
+<a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=1">Паскаль</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=2">Си</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=3">Ассемблер</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=4">Java</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=5">Matlab</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=6">Php</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=7">Html</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=8">JavaScript</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=9">CSS</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=10">C#</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=12">Delphi</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=13">Турбо Пролог</a><a class="nav_link4" href="http://life-prog.ru/view_cat.php?cat=14">1С</a>
+</p>
+<p><a class="nav_link4" href="http://life-prog.ru/view_cat2.php?cat=2">Компьютерные сети</a><a class="nav_link4" href="http://life-prog.ru/view_cat2.php?cat=1">Системное программное обеспечение</a><a class="nav_link4" href="http://life-prog.ru/view_cat2.php?cat=4">Информационные технологии</a><a class="nav_link4" href="http://life-prog.ru/view_cat2.php?cat=5">Программирование</a>
+</p>
+
+<p><a class="nav_link4" href="http://life-prog.ru/manyart.php">Все о программировании</a>
+
+</p><hr class="line">
+<div class="nav_title">Обучение</div>
+<p><a class="nav_link4" href="http://life-prog.ru/linux.php">Linux</a>
+<a class="nav_link4" href="http://life-prog.ru/unix.php">Unix</a>
+<a class="nav_link4" href="http://life-prog.ru/algoritmleng.php">Алгоритмические языки</a>
+<a class="nav_link4" href="http://life-prog.ru/agvu.php">Аналоговые и гибридные вычислительные устройства</a>
+<a class="nav_link4" href="http://life-prog.ru/arhitektura.php">Архитектура микроконтроллеров</a>
+
+<a class="nav_link4" href="http://life-prog.ru/infosystem.php">Введение в разработку распределенных информационных систем</a>
+<a class="nav_link4" href="http://life-prog.ru/chislmetod.php">Введение в численные методы</a>
+
+<a class="nav_link4" href="http://life-prog.ru/diskrmath.php">Дискретная математика</a>
+
+<a class="nav_link4" href="http://life-prog.ru/infoobslujpolz.php">Информационное обслуживание пользователей</a>
+<a class="nav_link4" href="http://life-prog.ru/infomodel.php">Информация и моделирование в управлении производством</a>
+<a class="nav_link4" href="http://life-prog.ru/komputernaya_grafika.php">Компьютерная графика</a>
+
+<a class="nav_link4" href="http://life-prog.ru/spmkm.php">Математическое и компьютерное моделирование</a>
+<a class="nav_link4" href="http://life-prog.ru/modelirovanie.php">Моделирование</a>
+<a class="nav_link4" href="http://life-prog.ru/neyrocomputer.php">Нейрокомпьютеры</a>
+<a class="nav_link4" href="http://life-prog.ru/ppdkss.php">Проектирование программ диагностики компьютерных систем и сетей</a>
+<a class="nav_link4" href="http://life-prog.ru/psp.php">Проектирование системных программ</a>
+<a class="nav_link4" href="http://life-prog.ru/systemi_schisleniya.php">Системы счисления</a>
+<a class="nav_link4" href="http://life-prog.ru/statistika.php">Теория статистики</a>
+<a class="nav_link4" href="http://life-prog.ru/optimization.php">Теория оптимизации</a>
+<a class="nav_link4" href="http://life-prog.ru/autocad.php">Уроки AutoCAD 3D</a>
+<a class="nav_link4" href="http://life-prog.ru/access.php">Уроки базы данных Access</a>
+<a class="nav_link4" href="http://life-prog.ru/orcad.php">Уроки Orcad</a>
+<a class="nav_link4" href="http://life-prog.ru/automati.php">Цифровые автоматы</a>
+<a class="nav_link4" href="http://life-prog.ru/shpargalkiCompStroi.php">Шпаргалки по компьютеру</a>
+<a class="nav_link4" href="http://life-prog.ru/shpargalki.php">Шпаргалки по программированию</a>
+<a class="nav_link4" href="http://life-prog.ru/ekspertnie_systemi.php">Экспертные системы</a>
+<a class="nav_link4" href="http://life-prog.ru/teorinfo.php">Элементы теории информации </a>
+
+</p><center>
+<script type="text/javascript" async="" src="./Модель двигателя постоянного тока с независимым возбуждением_files/cse.js.Без названия"></script><script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- life160left -->
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-1201569435861782" data-ad-slot="6573668333"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+
+</td>      
+        <td class="center" valign="top"><table width="600" align="center" border="1" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="20%" class="nav_a"><a href="http://life-prog.ru/" rel="nofollow">Главная</a></td>
+    <td width="28%" class="nav_a"><a href="http://life-prog.ru/articles.php?page=1">Тексты статей</a></td>
+    <td width="32%" class="nav_a"><a href="http://life-prog.ru/add_articles.php">Добавить статьи</a></td>
+   <td width="20%" class="nav_a"><a href="http://life-prog.ru/contact.php" rel="nofollow">Контакты</a></td>
+  </tr>
+</tbody></table>
+
+    
+
+<script type="text/javascript" src="./Модель двигателя постоянного тока с независимым возбуждением_files/cnt.share.js.Без названия" charset="utf-8"></script>
+<center><div class="yashare-auto-init b-share_theme_counter" data-yasharel10n="ru" data-yasharequickservices="yaru,vkontakte,odnoklassniki,twitter,moimir,facebook,gplus" data-yasharetheme="counter" data-yasharelink="http://life-prog.ru/2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html"><span class="b-share"><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="ВКонтакте" class="b-share__handle b-share__link b-share-btn__vkontakte" href="https://share.yandex.net/go.xml?service=vkontakte&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="vkontakte"><span class="b-share-icon b-share-icon_vkontakte"></span><span class="b-share-counter">0</span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Одноклассники" class="b-share__handle b-share__link b-share-btn__odnoklassniki" href="https://share.yandex.net/go.xml?service=odnoklassniki&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="odnoklassniki"><span class="b-share-icon b-share-icon_odnoklassniki"></span><span class="b-share-counter">0</span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Twitter" class="b-share__handle b-share__link b-share-btn__twitter" href="https://share.yandex.net/go.xml?service=twitter&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="twitter"><span class="b-share-icon b-share-icon_twitter"></span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Мой Мир" class="b-share__handle b-share__link b-share-btn__moimir" href="https://share.yandex.net/go.xml?service=moimir&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="moimir"><span class="b-share-icon b-share-icon_moimir"></span><span class="b-share-counter">0</span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Facebook" class="b-share__handle b-share__link b-share-btn__facebook" href="https://share.yandex.net/go.xml?service=facebook&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="facebook"><span class="b-share-icon b-share-icon_facebook"></span><span class="b-share-counter"></span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Google Plus" class="b-share__handle b-share__link b-share-btn__gplus" href="https://share.yandex.net/go.xml?service=gplus&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="gplus"><span class="b-share-icon b-share-icon_gplus"></span><span class="b-share-counter">0</span></a></span><iframe style="display: none" src="./Модель двигателя постоянного тока с независимым возбуждением_files/ya-share-cnt.html"></iframe></span></div>
+</center>
+
+
+ <h1>Модель двигателя постоянного тока с независимым возбуждением</h1>
+<hr><p class="viewinfo">Дата добавления: <span class="viewinfo2">2015-06-12</span>; просмотров: <span class="viewinfo2">1124</span>; <a href="http://life-prog.ru/pravo.php?n=2&amp;id=22546" class="redpravo">Нарушение авторских прав</a> </p><hr>	
+	<table width="100%" border="0">
+  <tbody><tr>
+    <td colspan="2">
+<table width="310" border="0" align="left">
+      <tbody><tr>
+        <td><p class="text">
+
+<noindex>
+</noindex></p><center>
+
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- life-prog336 -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-1201569435861782" data-ad-slot="5558141930"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+
+
+<p></p> </td>
+      </tr>
+    </tbody></table>
+
+<div id="hypercontext">
+<index>
+<sape_index>
+
+<p><em>Математическое описание ДПТ НВ и его Simulink-модель</em></p>
+ <p>Двигатель постоянного тока независимого возбуждения (рис. 4.7), описывается следующей системой дифференциальных и алгебраических уравнений в абсолютных единицах:</p>
+ <table border="1"> <tbody><tr> <td> <img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image468.gif"> ,
+ </td> <td> (1)
+ </td> </tr> <tr> <td> <img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image469.gif"> ,
+ </td> <td> (2)
+ </td> </tr> <tr> <td> <img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image470.gif"> ,
+ </td> <td> (3)
+ </td> </tr> <tr> <td> <img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image471.gif"> ,
+ </td> <td> (4)
+ </td> </tr> </tbody></table> <p>где</p>
+ <p><i>u</i> - напряжение на якорной обмотке двигателя,</p>
+ <p><i>e</i> - электродвижущая сила (ЭДС) якоря,</p>
+ <p><i>i </i>- ток якоря,</p>
+ <p><i>Ф </i>- поток, создаваемый обмоткой возбуждения,</p>
+ <p><i>M </i>- электромагнитный момент двигателя,</p>
+ <p><i>M<sub>С</sub> </i>- момент сопротивления движению,</p>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image472.gif"> - скорость вращения вала двигателя,</p>
+ <p><i>R</i> - активное сопротивление якорной цепи,</p>
+ <p><i>L </i>- индуктивность якорной цепи,</p>
+ <p><i>J</i> - суммарный момент инерции якоря и нагрузки,</p>
+ <p>С<sub> <img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image472.gif"> </sub> - коэффициент связи между скоростью и ЭДС,</p>
+ <p>С<sub>М</sub> - коэффициент связи между током якоря и электромагнитным моментом.</p>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image473.jpg"></p>
+ <p>Рис. 4.7</p>
+ <p>С точки зрения будущей модели, входными воздействиями являются напряжения якоря <i>u</i> и момент сопротивления движению <i>M<sub>С</sub></i> , выходными переменными - электромагнитный момент двигателя <i>M </i>и скорость вращения вала двигателя <img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image472.gif"> , а переменными состояния - переменные стоящие под знаком производной (ток якоря <i>i </i>и скорость вращения вала двигателя <img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image472.gif"> ). Остальные переменные, входящие в состав уравнений (1) - (4) являются параметрами, численные значения которых, необходимо будет задавать при проведении расчетов.</p>
+ <p>Для создания модели, так же как и в случае насыщающегося реактора, сначала необходимо получить передаточные функции, применив к дифференциальным уравнениям, преобразование Лапласа. Дифференциальное уравнение (1) даст ПФ, связывающую ток якоря и падение напряжения на якоре:</p>
+ <table border="1"> <tbody><tr> <td> <img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image474.gif"> .
+ </td> <td> (5)
+ </td> </tr> </tbody></table> <p>Уравнение (2) дает передаточную функцию, связывающую динамический момент и скорость вращения вала двигателя:</p>
+ <table border="1"> <tbody><tr> <td> <img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image474.gif"> .
+ </td> <td> (6)
+ </td> </tr> </tbody></table> <p>Уравнения (3) и (4) остаются без изменений.</p>
+ <p>В итоге, используя уравнения (3)-(6) не трудно составить Simulink-модель двигателя. Схема модели, а также графики электромагнитного момента и скорости при прямом пуске двигателя показаны на рис. 4.8. В примере приняты следующие значения параметров двигателя (в единицах Си): L=0.001, R=0.1, J=10, Cm=10, Cw=10, U=220, Fi=1. Наброс нагрузки производится в момент времени 0.2с, величина момента нагрузки равна 2500Нм.</p><noindex><center><br><script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- life320-100 -->
+<ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-1201569435861782" data-ad-slot="2048859534"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br></center></noindex>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image475.jpg"></p>
+ <p>Рис. 4.8</p>
+ <p>Скачать пример (Dpt_Simulink_1.zip)</p>
+ <p><em>SPS модель двигателя на базе источника тока</em></p>
+ <p>Для создания SPS модели двигателя на базе управляемого источника тока также можно воспользоваться общей схемой, приведенной на рис. 4.1. Выход датчика напряжения должен быть подключен к первому входу сумматора, а на управляющий вход источника тока должен быть подан сигнал пропорциональный току якоря двигателя (выходной сигнал блока Transfer Fcn на рис. 4.8). Схема блока SPS-модели двигателя, полная схема модели, а также графики тока якоря и скорости вращения вала показаны на рис. 4.9.</p>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image476.jpg"></p>
+ <p>Рис.4.9</p>
+ <p>При работе с моделью двигателя следует иметь в виду, что она не является электротехнической в чистом виде, поскольку выходные сигналы электромагнитного момента и скорости являются обычными однонаправленными безразмерными сигналами Simulink. Графики переменных, представленные на рис. 4.9 полностью повторяют соответствующие графики обычной Simulink модели двигателя, показанные на рис. 4.8.</p>
+ <p>Скачать пример (Dpt_Powersys_1.zip)</p>
+ <p><em>SPS модель двигателя на базе источника напряжения</em></p>
+ <p>Модель двигателя постоянного тока можно создать также и на базе управляемого источника напряжения и датчика тока. Поскольку на схеме замещения цепи якоря двигателя (рис. 4.7) присутствуют индуктивность и резистор, то эти элементы можно исключить из Simulink-модели, исключив соответственно и уравнение (1), а также передаточную функцию (5). Сами резистор и индуктивность можно добавить к модели с помощью стандартного блока Series RLC Branch. В результате будет получена комбинированная модель двигателя (рис. 4.10). На рис. 4.10 показана и полная схема модели с подключенным источником питания двигателя (DC Voltage Source). Источник питания подключен через ключ Ideal Switch, который замыкается через небольшой промежуток времени с начала расчета. Наличие такого ключа обусловлено особенностями расчета начальных условий в моделях SimPowerSystem, а именно начальные условия для элемента Series RLC Branch (ток в элементе) задаются как для установившегося режима. Наличие же первоначально разомкнутого ключа обеспечивает нулевые (точнее близкие к нулевым) начальные условия.</p>
+ <p>Графики переменных двигателя на рис. 4.10 не приведены, поскольку они полностью совпадают с представленными на рис. 4.8 и 4.9.</p>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image478.jpg"></p>
+ <p>Рис.4.10</p>
+ <p>Скачать пример (Dpt_Powersys_2.zip)</p>
+ <p>Таким образом, используя изложенную выше методику, пользователь может создавать модели электротехнических устройств различной степени сложности.</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>5. Библиотека Simulink-прототипов электротехнических блоков.</p>
+ <p>&nbsp;</p>
+ <p>Электротехнические блоки представленные в библиотеке SimPowerSystem как правило недоступны для просмотра и редактирования их содержимого. Однако, иногда, пользователю необходимо познакомиться с устройством модели хотя бы для того, чтобы лучше разобраться как она работает. Часто пользователя не полностью устраивает библиотечный блок, и он хотел бы внести незначительные изменения для наилучшего решения своей задачи. Весьма полезно также познакомиться с устройством основных блоков для того, чтобы научиться делать их самому. Для реализации перечисленных выше задач в SPS имеется отдельная библиотека Simulink-моделей электротехнических блоков (Simulink-прототипов). Пользователь может открыть библиотеку из основного окна MATLAB, набрав в командной строке powerlib_models. Библиотека прототипов (рис. 5.1) содержит 4 раздела:</p>
+ <p>· Continuous - непрерывные модели,</p>
+ <p>· Discrete - дискретные модели,</p>
+ <p>· Switch Current Source - модели ключей,</p>
+ <p>· Phasors - модели устройств для расчета установившегося режима.</p>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image479.jpg"> <br> Рис. 5.1</p>
+ <p>Отличие моделей в этой библиотеке заключается в том, что это обычные Simulink-модели, имеющие однонаправленные входные и выходные порты и соединяющиеся однонаправленными линиями связи, в то время как SPS модели имеют фактически двунаправленные порты и должны соединяться двунаправленными линиями связи. Для создания полноценной SPS на основе прототипа модели разработчику необходимо дополнить прототип источником тока и датчиком напряжения как изложено в главе посвященной пользовательским моделям. Для этого каждый Simulink-прототип имеет вход v, на который нужно подать сигнал пропорциональный напряжению и выход i, подключаемый к источнику тока.</p>
+ <p>Библиотека Continuous (рис. 5.1) содержит два типа блоков:</p>
+ <p>· модели электрических машин, насыщающегося трансформатора, грозозащитного разрядника и линии электропередачи с распределенными параметрами,</p>
+ <p>· блоки логики переключения полупроводниковых устройств с естественной коммутацией (Breaker, Diode, Thyristor и Universal Bridge).</p>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image481.jpg"> <br> Рис. 5.2</p>
+ <p>Дискретная библиотека содержит дискретные варианты блоков библиотеки Continuous.</p>
+ <p>Библиотека Phasors (рис. 5.3) включает модели электрических машин, ключей и линии электропередачи, предназначенные для расчета установившегося режима.</p>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image482.jpg"> <br> Рис. 5.3</p>
+ <p>Библиотека Switch Current Source (рис. 5.4) включает модели диода и тиристора, для которых индуктивность во включенном состоянии <i>L<sub>on</sub> &gt; 0</i>, а также полностью управляемых полупроводниковых приборов (GTO тиристоров, IGBT и MOSFET транзисторов).</p>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image483.jpg"> <br> Рис. 5.4</p>
+ <p>При создании моделей на базе прототипов с использованием источников тока, следует иметь в виду, что такие модели нельзя включать последовательно с индуктивностью. Для устранения этого ограничения следует шунтировать либо индуктивность, либо саму модель резистором с достаточно большим сопротивлением.</p>
+ <p>&nbsp;</p>
+ <p>6. Основные команды Matlab для управления SPS-моделью.</p>
+ <p>&nbsp;</p>
+ <p>При разработке графического интерфейса пользователя, создании S-функций и т.п. задач требующих управления конфигурацией, параметрами и работой Simulink и SimPowerSystem моделей допускается использовать специальные команды (функции) языка MATLAB. Для работы с SPS-моделью допускается применять те же самые команды, что и для Simulink моделей (add_line, add_block, get_param, set_param и т.д.). При этом следует иметь в виду, что некоторые Simulink-команды будут иметь ограничения. Так, например, команда set_param не позволяет изменять параметры SPS-блоков в процессе расчета как для Simulink-блоков.</p>
+ <p>Для SPS-моделей есть и свои особенные команды. Их всего три:</p>
+ <p>· powerinit - задание начальных условий SPS-модели,</p>
+ <p>· circ2ss - нахождение математического описания линейной модели электрической цепи в уравнениях пространства состояний,</p>
+ <p>· power2sys - анализ SPS-модели.</p>
+ <p>В большинстве случаев пользователю нет необходимости принудительно вызывать эти функции, поскольку они вызываются SimPowerSystem автоматически при начале расчета либо из графической среды пользователя Powergui.</p>
+ <table border="1"> <tbody><tr> <td> powerinit
+ </td> <td> Инициализация SPS-модели
+ </td> </tr> </tbody></table> <p><em>Назначение:</em></p>
+ <p>Задание начальных условий.</p>
+ <p><em>Синтаксис:</em></p>
+ <p>powerinit(system,'look')<br> Команда выводит начальные значения переменных модели system.</p>
+ <p>powerinit(system,'reset')<br> Команда устанавливает нулевые начальные значения переменных модели system.</p>
+ <p>powerinit(system,'steady')<br> Команда устанавливает начальные значения переменных модели system таким образом, чтобы расчет начался из точки установившегося режима.</p>
+ <p>powerinit(system,'set',p)<br> Команда устанавливает начальные значения переменных модели system заданные в векторе p. Порядок следования переменных можно определить командой powerinit(system,'look').</p>
+ <p>powerinit(system,'setb',state,value) <br> Команда устанавливает начальное значение value переменной state модели system.</p>
+ <p><em> </em></p>
+ <p><em> </em></p>
+ <p><em>Пример:</em></p>
+ <p>На рис. 6.1 показана модель последовательного колебательного контура подключенного к источнику постоянного тока. Имя файла модели - sys.mdl.</p>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image484.jpg"> <br> Рис. 6.1</p>
+ <p>Выполнение команды powerinit(sys,'look') в окне MATLAB позволяет увидеть начальные значения переменных модели:</p>
+ Il_Series RLC Branch = 34.8138Uc_Series RLC Branch = -3.8626 <p>На осциллограмме видно, что начальное значение тока контура равно значению найденному с помощью функции powerinit.</p>
+ <p><em> </em></p>
+ <p><em> </em></p>
+ <p><em>Пример:</em></p>
+ <p>Команда powerinit('sys','setb','Il_Series RLC Branch',-50) задает значение тока в RLC-цепи равное -50А. На рис. 6.2 показана осциллограмма тока для расчета схемы с указанным начальным значением тока.</p>
+ <p><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/image485.jpg"> <br> Рис. 6.2</p>
+ <p>Скачать пример (sys.zip)</p>
+ <p>&nbsp;</p>
+ <table border="1"> <tbody><tr> <td> circ2ss
+ </td> <td> Определение математической модели электрической схемы
+ </td> </tr> </tbody></table> <p><em>Назначение:</em></p>
+ <p>Функция рассчитывает матрицы A, B, C, В уравнений пространства-состояния, описывающих модель:</p>
+ x = Ax + Buy = Cx + Du <p>где</p>
+<p>&nbsp;</p>
+ <p><i>x</i> - вектор состояния,</p>
+ <p><i>u</i> - вектор входных воздействий,</p>
+ <p><i>y</i> - вектор выходных сигналов,</p>
+ <p>A, B, C, D - матрицы: системы, входа, выхода и обхода, соответственно.</p>
+ <p>Функция circ2ss вызывается автоматически функцией power2sys при начале расчета модели. Можно также запускать функцию на выполнение непосредственно из командного окна MATLAB или из m-файла.</p>
+ <p><em>Синтаксис:</em></p>
+ <p>Вызов функции должен выполняться минимум для 7 аргументов:</p>
+ [A,B,C,D,states,x0,x0sw,rlsw,u,x,y,freq,Asw,Bsw,Csw,Dsw,Hlin] = circ2ss(rlc,switches,source,line_dist,yout,y_type,unit), <p>где</p>
+ <p>· A, B, C, D - матрицы: системы, входа, выхода и обхода, соответственно.</p>
+ <p>· states - строковая матрица, содержащая имена переменных состояния. Каждое имя должно находиться в отдельной строке и иметь следующий формат:</p>
+ · Il_bxx_nzz1_zz2 - ток индуктивности,· Uc_bxx_nzz1_zz2 - напряжение на конденсаторе, <p>где</p>
+ <p><i>xx</i> - номер ветви,</p>
+ <p><i>zz1</i> - номер первого узла ветви,</p>
+ <p><i>zz2</i> - номер второго узла ветви.</p>
+ <p>· x0 - вектор начальных значений переменных состояния.</p>
+ <p>· x0sw - вектор начальных значений токов ключей.</p>
+ <p>· rlsw - матрица размерностью (nswitch, 2) содержащая значения R(Ом) и L(Гн) ключей, где nswitch - число ключей в схеме.</p>
+ <p>· u, x, y - матрицы содержащие комплексные значения установившихся величин: u(ninput,nfreq) - входные величины, y(noutput,nfreq) - выходные величины, x(nstates,nfreq) - переменные состояния, где: nfreq - размерность вектора freq, содержащего значения частот источников схемы.</p>
+ <p>· Asw,Bsw,Csw,Dsw - матрицы уравнений пространства-состояния схемы для закрытых состояний ключей. Каждый закрытый ключ имеющий внутреннюю индуктивность добавляет одну переменную состояния схемы.</p>
+ <p>· Hlin - трехмерный массив (nfreq, noutput, ninput) комплексных взаимных сопротивлений вход-выход для каждого значения частоты.</p>
+ <p>· rlc - матрица, задающая топологию схемы.</p>
+ <p>· switches - матрица ключей, содержащая параметры ключей.</p>
+ <p>· source - матрица источников, содержащая параметры источников.</p>
+ <p>· line_dist - матрица линий передачи, содержащая параметры линий передачи.</p>
+ <p>· yout - строковая матрица, задающая выражения для расчета выходных переменных. Каждое выражение может содержать линейную комбинацию значений переменных состояния и их производных.</p>
+ <p>· y_type - вектор целых чисел, определяющий вид выходной переменной (0 - напряжение, 1 - ток).</p>
+ <p>· unit - строковый параметр задающий единицы измерения. Если значения параметра равно 'OHM', то значения R, L и С задаются в Ом для базовой частоты, определяемой параметром freq_sys (по умолчанию - 60 Гц). Если значение параметра равно 'OHU', то значение R задается в Ом, L - в mГн и С - в мкФ. Функция circ2ss может вызываться также с 12, 13, 14 или 16 аргументами. Подробности о форматах каждого аргумента можно найти в руководстве пользователя для SimPowerSystem.</p>
+ <table border="1"> <tbody><tr> <td> power2sys
+ </td> <td> Определение математической модели электрической схемы, созданной в SimPowerSystem
+ </td> </tr> </tbody></table> <p><em>Назначение:</em></p>
+ <p>Функция рассчитывает матрицы A, B, C, В уравнений пространства-состояния, описывающих модель:</p>
+ x = Ax + Buy = Cx + Du <p>где</p>
+<p>&nbsp;</p>
+ <p><i>x</i> - вектор состояния,</p>
+ <p><i>u</i> - вектор входных воздействий,</p>
+ <p><i>y</i> - вектор выходных сигналов,</p>
+ <p>A, B, C, D - матрицы: системы, входа, выхода и обхода, соответственно.</p>
+ <p>Функция power2sys вызывается автоматически из Simulink при начале расчета модели. Можно также запускать функцию на выполнение непосредственно из командного окна MATLAB или из m-файла.</p>
+ <p><em>Синтаксис:</em></p>
+ <p>power2sys('sys','structure')<br> Команда создает структуру для модели sys. Поля структуры имеют тот же смысл, что и данные, возвращаемые функцией circ2ss.</p>
+ <p>Подробности о способах использования функции power2sys можно найти в руководстве пользователя для SimPowerSystem.</p>
+ <p><em>Пример:</em></p>
+ <p>Для модели, показанной на рис. 6.1 вызов функции:</p>
+ psb = power2sys('sys','structure') <p>дает следующий результат:</p>
+ psb = circuit: 'sys' states: [2x21 char] inputs: 'U_AC Voltage Source' outputs: 'I_Current Measurement' A: [2x2 double] B: [2x1 double] C: [1 0] D: 0 x0: [2x1 double] Aswitch: [2x2 double] Bswitch: [2x1 double] Cswitch: [1 0] Dswitch: 0 x0switch: [0x1 double] uss: 100 xss: [2x1 double] yss: 1.2135+34.8138i Hlin: 0.0121+ 0.3481i frequencies: 50 LoadFlow: [] OscillatoryModes: [2x39 char] <p>Значения полей структуры psb могут быть найдены следующим образом:</p>
+ &gt;&gt; A=psb.A A = -100 -1000 1000 0 &gt;&gt; B=psb.B B = 1000 0 &gt;&gt; C=psb.C C = 1 0 &gt;&gt; D=psb.C D = 1 0 <p>Остальные поля структуры могут быть найдены аналогично.</p>
+ <p>&nbsp;</p>
+ <p>7. Как SimPowerSystems работает.</p>
+ <p>&nbsp;</p></sape_index></index></div><hr><noindex>
+<center>
+
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- life-prog336-2 -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-1201569435861782" data-ad-slot="8322061130"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</center>
+</noindex><br><table width="100%" border="0">
+  <tbody><tr>
+    <td width="47%" align="right"><span class="green">&lt;== предыдущая лекция</span></td>
+    <td width="6%" align="center"><span class="red">|</span></td>
+    <td width="47%"><span class="green"> следующая лекция ==&gt;</span></td>
+  </tr>
+  <tr>
+  <td align="right"><a href="http://life-prog.ru/2_22545_model-nasishchayushchegosya-reaktora.html">Модель насыщающегося реактора</a></td> <td align="center"><span class="red">|</span></td><td> <a href="http://life-prog.ru/2_22547_algoritm-rascheta-SimPowerSystem-modeli.html">Алгоритм расчета SimPowerSystem-модели</a></td></tr></tbody></table><hr></td>
+		</tr>
+		</tbody></table>
+
+
+</td>
+        <td width="182" class="right" valign="top">
+
+<hr class="line">
+
+<p><a class="nav_link2" href="http://life-prog.ru/map.php">Карта сайта</a>
+<a class="nav_link2" href="http://life-prog.ru/mapukr.php">Карта сайта укр</a>
+
+<br>
+
+</p><hr class="line">
+
+<center>
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- life-prog160 -->
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-1201569435861782" data-ad-slot="7589729930"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+
+<div class="nav_title">Видео</div>
+<a class="nav_link2" href="http://life-prog.ru/video.php"><strong>Уроки php mysql</strong></a>
+<a class="nav_link2" href="http://life-prog.ru/videoprog.php"><strong>Программирование</strong></a>
+<br>
+
+<hr class="line">
+<div class="nav_title">Онлайн сервисы</div>
+<a class="nav_link2" href="http://life-prog.ru/servis.php?id=1">Онлайн система счисления</a>
+<a class="nav_link2" href="http://life-prog.ru/servis.php?id=2">Калькулятор онлайн обычный</a>
+<a class="nav_link2" href="http://life-prog.ru/servis.php?id=3">Инженерный калькулятор онлайн</a>
+<a class="nav_link2" href="http://life-prog.ru/servis.php?id=4">Замена русских букв на английские для вебмастеров</a>
+<a class="nav_link2" href="http://life-prog.ru/servis.php?id=5">Замена русских букв на английские</a>
+<br>
+<hr class="line">
+<div class="nav_title">Полезное</div>
+<p>
+<a class="nav_link4" href="http://life-prog.ru/apparprog.php">Аппаратное и программное обеспечение</a>
+<a class="nav_link4" href="http://life-prog.ru/vad_cat.php">Графика и компьютерная сфера</a>
+<a class="nav_link4" href="http://life-prog.ru/igis.php">Интегрированная геоинформационная система</a>
+<a class="nav_link4" href="http://life-prog.ru/internet.php">Интернет</a>
+<a class="nav_link4" href="http://life-prog.ru/computer.php">Компьютер</a>
+<a class="nav_link4" href="http://life-prog.ru/komplektcomp.php">Комплектующие компьютера</a>
+<a class="nav_link4" href="http://life-prog.ru/lecture/">Лекции</a>
+<a class="nav_link4" href="http://life-prog.ru/msinv.php">Методы и средства измерений неэлектрических величин</a>
+<a class="nav_link4" href="http://life-prog.ru/diagnostandobsluj.php">Обслуживание компьютерных и периферийных устройств</a>
+
+
+<a class="nav_link4" href="http://life-prog.ru/os.php">Операционные системы</a>
+<a class="nav_link4" href="http://life-prog.ru/parallelnoe-programmirovanie.php">Параллельное программирование</a>
+<a class="nav_link4" href="http://life-prog.ru/opes.php">Проектирование электронных средств</a>
+<a class="nav_link4" href="http://life-prog.ru/periferiynoe_ustroystvo.php">Периферийные устройства</a>
+<a class="nav_link4" href="http://life-prog.ru/resources.php">Полезные ресурсы для программистов</a>
+<a class="nav_link4" href="http://life-prog.ru/programs.php">Программы для программистов</a>
+<a class="nav_link4" href="http://life-prog.ru/programmer.php">Статьи для программистов</a>
+<a class="nav_link4" href="http://life-prog.ru/struktura_dannih.php">Cтруктура и организация данных</a>
+
+
+<br>
+</p><hr class="line">      </td></tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+
+<script type="text/javascript">
+var begun_auto_pad = 224323701;
+var begun_block_id = 224331884;
+</script>
+<script src="http://autocontext.begun.ru/autocontext2.js" type="text/javascript"></script>
+
+
+
+    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="182" class="left"><p class="tail_left">
+&nbsp;
+</p></td>
+    <td class="left">
+
+<br>
+
+<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td width="220"><b>Полезен материал? Поделись:</b></td>
+    <td width="380"><div class="yashare-auto-init b-share_theme_counter" data-yasharel10n="ru" data-yasharequickservices="yaru,vkontakte,odnoklassniki,twitter,moimir,facebook,gplus" data-yasharetheme="counter" data-yasharelink="http://life-prog.ru/2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html"><span class="b-share"><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="ВКонтакте" class="b-share__handle b-share__link b-share-btn__vkontakte" href="https://share.yandex.net/go.xml?service=vkontakte&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="vkontakte"><span class="b-share-icon b-share-icon_vkontakte"></span><span class="b-share-counter">0</span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Одноклассники" class="b-share__handle b-share__link b-share-btn__odnoklassniki" href="https://share.yandex.net/go.xml?service=odnoklassniki&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="odnoklassniki"><span class="b-share-icon b-share-icon_odnoklassniki"></span><span class="b-share-counter">0</span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Twitter" class="b-share__handle b-share__link b-share-btn__twitter" href="https://share.yandex.net/go.xml?service=twitter&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="twitter"><span class="b-share-icon b-share-icon_twitter"></span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Мой Мир" class="b-share__handle b-share__link b-share-btn__moimir" href="https://share.yandex.net/go.xml?service=moimir&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="moimir"><span class="b-share-icon b-share-icon_moimir"></span><span class="b-share-counter">0</span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Facebook" class="b-share__handle b-share__link b-share-btn__facebook" href="https://share.yandex.net/go.xml?service=facebook&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="facebook"><span class="b-share-icon b-share-icon_facebook"></span><span class="b-share-counter"></span></a></span><span class="b-share-btn__wrap"><a rel="nofollow" target="_blank" title="Google Plus" class="b-share__handle b-share__link b-share-btn__gplus" href="https://share.yandex.net/go.xml?service=gplus&amp;url=http%3A%2F%2Flife-prog.ru%2F2_22546_model-dvigatelya-postoyannogo-toka-s-nezavisimim-vozbuzhdeniem.html&amp;title=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%BE%D0%BA%D0%B0%20%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D1%8B%D0%BC%20%D0%B2%D0%BE%D0%B7%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC" data-service="gplus"><span class="b-share-icon b-share-icon_gplus"></span><span class="b-share-counter">0</span></a></span><iframe style="display: none" src="./Модель двигателя постоянного тока с независимым возбуждением_files/ya-share-cnt(1).html"></iframe></span></div></td>
+  </tr>
+</tbody></table>
+<p class="red">Не нашли то, что искали? Google вам в помощь!</p><p>
+<script>
+  (function() {
+    var cx = '011469088786448071113:gju-8bpdg5g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-ru"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 " style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="поиск" id="gsc-i-id1" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none; background: url(&quot;http://www.google.com/cse/static/ru/google_custom_search_watermark.gif&quot;) left center no-repeat rgb(255, 255, 255);" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="ru" dir="ltr" spellcheck="false"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb50">&#215;</span></a></div></td></tr></tbody></table></div><input type="hidden" name="bgresponse" id="bgresponse"></td><td class="gsc-search-button"><input type="image" src="./Модель двигателя постоянного тока с независимым возбуждением_files/search_box_icon.png" class="gsc-search-button gsc-search-button-v2" title="поиск"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="удалить результаты">&nbsp;</div></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gsc-branding"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">технология</div></td><td class="gsc-branding-img"><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/small-logo.png" class="gsc-branding-img"></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Пользовательский поиск</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">Упорядочить:</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table cellspacing="0" cellpadding="0" class="gsc-resultsHeader"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Интернет</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="показать один результат">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="показать другие результаты">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="показать все результаты">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div>
+
+    </p></td>
+    <td width="182" class="right">
+
+&nbsp;</td>
+  </tr>
+</tbody></table>
+<table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="20%" align="left" class="left">
+
+&nbsp;
+
+</td>
+    <td width="60%" class="left"><hr><p class="tail">© life-prog.ru При использовании материалов прямая ссылка на сайт обязательна.</p>
+
+</td>
+    <td width="20%" align="right" class="left">
+
+<noindex>
+
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='go.php?url=http://www.liveinternet.ru/click' "+
+"target=_blank rel='nofollow'><img src='http://counter.yadro.ru/hit?t22.11;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><a href="http://life-prog.ru/go.php?url=http://www.liveinternet.ru/click" target="_blank" rel="nofollow"><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/hit" alt="" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" border="0" width="88" height="31"></a><!--/LiveInternet-->
+
+
+<!--Rating@Mail.ru counter-->
+<script language="javascript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer);js=10;//--></script>
+<script language="javascript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled();js=11;//--></script>
+<script language="javascript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height;
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);js=12;//--></script>
+<script language="javascript1.3" type="text/javascript"><!--
+js=13;//--></script><script language="javascript" type="text/javascript"><!--
+d.write('<a href="go.php?url=http://top.mail.ru/jump?from=1751711" target="_top" rel="nofollow">'+
+'<img src="http://da.cb.ba.a1.top.mail.ru/counter?id=1751711;t=57;js='+js+
+a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru" border="0" '+
+'height="31" width="88"><\/a>');if(11<js)d.write('<'+'!-- ');//--></script><a href="http://life-prog.ru/go.php?url=http://top.mail.ru/jump?from=1751711" target="_top" rel="nofollow"><img src="./Модель двигателя постоянного тока с независимым возбуждением_files/counter" alt="Рейтинг@Mail.ru" border="0" height="31" width="88"></a><!-- 
+<noscript>
+
+
+</noindex>
+
+</td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+<span class="tailgener">Генерация страницы за: 0.074 сек.<span>
+
+</body>
+</html>
+--></noindex></td></tr></tbody></table></td></tr></tbody></table><div id="i-l-app"><div id="i-l-app-mouse-text" style="display: none"></div><div id="i-l-app-color-picker"><div class="colors"><div class="color-0" data-color="0"></div><div class="color-1" data-color="1"></div><div class="color-2" data-color="2"></div><div class="color-3" data-color="3"></div><div class="color-4" data-color="4"></div><div class="color-5" data-color="5"></div><div class="color-6" data-color="6"></div><div class="color-7" data-color="7"></div></div><div id="_l_i-color-active" class="color-3"></div></div><div id="i-l-app-h-rule" data-type="h"></div><div id="i-l-app-v-rule" data-type="v"></div><div id="i-l-app-lines" class="color-3"></div></div><table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 495px; display: none; top: 11121px; position: absolute; left: 355px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>
